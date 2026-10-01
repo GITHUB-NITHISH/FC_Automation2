@@ -1,0 +1,60 @@
+{
+	"SignupPayload":
+	{
+	    "customer": {
+	        "name": "Automation Test",
+	        "contact_name": "Venkat TestAutomation",
+	        "email_address": "arun.rajendran@kumaran.com",
+	        "phone_number": {
+	            "number": "1121231234",
+	            "extension": "123"
+	        },
+	        "address": {
+	            "address_line1": "VenkatRayap automation",
+	            "address_line2": "addr2",
+	            "street_number": "",
+	            "street_name": "",
+	            "unit_number": "2",
+	            "city": "Vancouver",
+	            "region": "BC",
+	            "country": "CA",
+	            "postal_code": "V6E 3P3",
+	            "validated": false
+	        },
+	        "industry": "",
+	        "sign_up_code": "",
+	        "is_freight_broker": false,
+	        "monthly_ltlshipments_range": "1-5",
+	        "monthly_parcel_shipments_range": "0-25",
+	        "ecommerce_stores": [
+	            "amazon",
+	            "litespeed"
+	        ],
+	        "ecommerce_stores_other": "",
+	        "ships_pftl": true,
+	        "referral": "google",
+	        "referral_other": "",
+	        "preferences": {
+	            "email.newsletter": "true",
+	            "email.promotions": "true",
+	            "email.system-updates": "true",
+	            "ship.use-default-from-address": "true",
+	            "ship.default-from-address": "{\"name\":\"Automation TC\",\"searchable_id\":\"\",\"address\":{\"address_line1\":\"VenkatRayap automation\",\"address_line2\":\"addr2\",\"street_number\":\"\",\"street_name\":\"\",\"unit_number\":\"2\",\"city\":\"Vancouver\",\"region\":\"BC\",\"country\":\"CA\",\"postal_code\":\"V6E 3P3\",\"validated\":false},\"residential\":false,\"business_type\":\"\",\"tailgate_required\":false,\"instructions\":\"\",\"contact_name\":\"Venkat TestAutomation\",\"phone_number\":{\"number\":\"1121231234\",\"extension\":\"123\"},\"email_addresses\":[\"venkatesh.rayappan@kumaran.com\"],\"receives_email_updates\":false,\"ready_at\":{\"hour\":9,\"minute\":0,\"populated\":true},\"ready_until\":{\"hour\":17,\"minute\":0,\"populated\":true},\"signature_requirement\":\"\"}",
+	            "invoicing.financial-document-variant": "snapshot"
+	        },
+	        "registration_source": "",
+	        "is_chamber": false,
+	        "chamber_name": ""
+	    },
+	    "user": {
+	        "login_id": "venkatrayap123",
+	        "first_name": "Venkat1",
+	        "last_name": "TestAutomation1",
+	        "email_address": "arun.rajendran@kumaran.com",
+	        "language": "en",
+	        "currency": "CAD",
+	        "measurement_system": "imperial"
+	    },
+	    "password": "Venkatrayap6@"
+	}
+}

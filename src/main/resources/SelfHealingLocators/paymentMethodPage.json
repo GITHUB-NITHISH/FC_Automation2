@@ -1,0 +1,139 @@
+{
+	"paymentMethodPage": {
+		"paymentMethodsHeader": {
+			"primary": "xpath=//span[normalize-space()='Payment Methods']",
+			"secondary": "xpath=//span[contains(text(),'Payment Methods')]",
+			"tertiary": "xpath=//*[contains(@class,'payment-customer-heading') and contains(text(),'Payment Methods')]"
+		},
+		"addNewPaymentButton": {
+			"primary": "xpath=//span[normalize-space()='Payment Methods']/ancestor::div//button[normalize-space()='Add New Payment Method']",
+			"secondary": "xpath=//button[contains(text(),'Add New Payment Method')]",
+			"tertiary": "css=button"
+		},
+		"paymentTypeChequeRadioButton": {
+			"primary": "xpath=//label[normalize-space()='Payment Type']/following::label[normalize-space()='Cheque']",
+			"secondary": "xpath=//label[contains(text(),'Cheque')]",
+			"tertiary": "css=label"
+		},
+		"paymentCurrencyRadioButton": {
+			"primary": "xpath=//label[normalize-space()='Payment Currency']/following::label[normalize-space()='${value}']",
+			"secondary": "xpath=//label[normalize-space()='${value}']",
+			"tertiary": "css=label"
+		},
+		"paymentNameField": {
+			"primary": "xpath=//label[normalize-space()='Payment Name']/following-sibling::input",
+			"secondary": "css=input[formcontrolname='paymentName']",
+			"tertiary": "xpath=//input[contains(@id,'paymentName')]"
+		},
+		"paymentNameError": {
+			"primary": "xpath=//label[normalize-space()='Payment Name']//parent::div//app-form-feedback",
+			"secondary": "css=app-form-feedback",
+			"tertiary": "xpath=//app-form-feedback"
+		},
+		"paymentName1CharacterError": {
+			"primary": "xpath=//label[normalize-space()='Payment Name']//parent::div//app-form-feedback",
+			"secondary": "css=app-form-feedback",
+			"tertiary": "xpath=//app-form-feedback"
+		},
+		"paymentName50CharacterError": {
+			"primary": "xpath=//label[normalize-space()='Payment Name']//parent::div//app-form-feedback",
+			"secondary": "css=app-form-feedback",
+			"tertiary": "xpath=//app-form-feedback"
+		},
+		"firstChequeInSeriesField": {
+			"primary": "xpath=//label[normalize-space()='First Cheque # in Series']/following-sibling::input",
+			"secondary": "css=input[formcontrolname='firstChequeInSeries']",
+			"tertiary": "xpath=//input[contains(@id,'firstCheque')]"
+		},
+		"firstChequeInSeriesFieldError": {
+			"primary": "xpath=//label[normalize-space()='First Cheque # in Series']//parent::div//app-form-feedback",
+			"secondary": "css=app-form-feedback",
+			"tertiary": "xpath=//app-form-feedback"
+		},
+		"chequesInSeriesField": {
+			"primary": "xpath=//label[normalize-space()='# of Cheques in Series']/following-sibling::input",
+			"secondary": "css=input[formcontrolname='chequesInSeries']",
+			"tertiary": "xpath=//input[contains(@id,'chequesInSeries')]"
+		},
+		"chequesInSeriesFieldError": {
+			"primary": "xpath=//label[normalize-space()='# of Cheques in Series']//parent::div//app-form-feedback",
+			"secondary": "css=app-form-feedback",
+			"tertiary": "xpath=//app-form-feedback"
+		},
+		"lastChequeInSeriesField": {
+			"primary": "xpath=//label[normalize-space()='Last Cheque # in Series']/following-sibling::input",
+			"secondary": "css=input[formcontrolname='lastChequeInSeries']",
+			"tertiary": "xpath=//input[contains(@id,'lastCheque')]"
+		},
+		"lastChequeInSeriesFieldError": {
+			"primary": "xpath=//label[normalize-space()='Last Cheque # in Series']//parent::div//app-form-feedback",
+			"secondary": "css=app-form-feedback",
+			"tertiary": "xpath=//app-form-feedback"
+		},
+		"sendReminderWhenChequesRemainField": {
+			"primary": "xpath=//label[normalize-space()='Send Reminder When # of Cheques Remain']/following-sibling::input",
+			"secondary": "css=input[formcontrolname='sendReminderWhenChequesRemain']",
+			"tertiary": "xpath=//input[contains(@id,'sendReminder')]"
+		},
+		"sendReminderWhenChequesRemainFieldError": {
+			"primary": "xpath=//label[normalize-space()='Send Reminder When # of Cheques Remain']//parent::div//app-form-feedback",
+			"secondary": "css=app-form-feedback",
+			"tertiary": "xpath=//app-form-feedback"
+		},
+		"cancelButton": {
+			"primary": "xpath=//span[normalize-space()='Create New Payment Method']/ancestor::div//button[normalize-space()='Cancel']",
+			"secondary": "xpath=//button[normalize-space()='Cancel']",
+			"tertiary": "css=button"
+		},
+		"savePaymentMethodButton": {
+			"primary": "xpath=//span[normalize-space()='Create New Payment Method']/ancestor::div//button[normalize-space()='Save Payment Method']",
+			"secondary": "xpath=//button[contains(text(),'Save Payment Method')]",
+			"tertiary": "css=button[type='submit']"
+		},
+		"validateAddPaymentSuccessMessage": {
+			"primary": "xpath=//h2[normalize-space()='Payment details']/ancestor::app-alert//div[contains(@class,'modal-section-highlighted') and contains(normalize-space(),'created successfully')]",
+			"secondary": "xpath=//div[contains(@class,'modal-section-highlighted')]",
+			"tertiary": "css=.modal-section-highlighted"
+		},
+		"successModalCloseButton": {
+			"primary": "xpath=//h2[normalize-space()='Payment details']/following::button[normalize-space()='Close']",
+			"secondary": "xpath=//button[normalize-space()='Close']",
+			"tertiary": "css=button"
+		},
+		"validateAlreadyExistErrorMessage": {
+			"primary": "xpath=//h2[normalize-space()='Error']/ancestor::app-alert//div[contains(normalize-space(),'already exists')]",
+			"secondary": "xpath=//div[contains(text(),'already exists')]",
+			"tertiary": "css=.modal-section-highlighted"
+		},
+		"errorModalCloseButton": {
+			"primary": "xpath=//h2[normalize-space()='Error']/following::button[normalize-space()='Close']",
+			"secondary": "xpath=//button[normalize-space()='Close']",
+			"tertiary": "css=button"
+		},
+		"switchTab": {
+			"primary": "xpath=//label[contains(@class, 'custom-control-label')]/span[contains(normalize-space(),'${value}')]",
+			"secondary": "xpath=//span[contains(normalize-space(),'${value}')]",
+			"tertiary": "css=span"
+		},
+		"pageSizeDropdown": {
+			"primary": "xpath=//select[@formcontrolname='pageSize']",
+			"secondary": "xpath=//select[@name='pageSize']",
+			"tertiary": "xpath=//select[contains(@id,'items-per-page')]"
+		},
+		"paymentMethodtile": {
+			"primary": "xpath=//td[normalize-space()='${value}']",
+			"secondary": "xpath=//td[contains(text(),'${value}')]",
+			"tertiary": "xpath=//*[text()='${value}']"
+		},
+		"validateAddChequeName": {
+			"primary": "xpath=//td[normalize-space()='${value}']",
+			"secondary": "xpath=//td[contains(text(),'${value}')]",
+			"tertiary": "css=td"
+		},
+		"homeButton": {
+			"primary": "xpath=//span[@class='desktop-only-text logo-link-text']",
+			"secondary": "css=span.desktop-only-text.logo-link-text",
+			"tertiary": "xpath=//span[contains(@class,'logo-link-text')]"
+		}
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"apSearchCommissionsPage": {
+		"searchCommissionsHeader":{
+			"Primary": "xpath=//h4[normalize-space()='Search Commissions']",
+			"secondary": "xpath=//div[contains(@class,'row') and contains(@class,'mb-3')]//h4[normalize-space()='Search Commissions']",
+			  "tertiary": "xpath//h4[@class='m-0' and normalize-space()='Search Commissions']"
+	},
+		"dueRadioButton":{
+			"Primary": "xpath=//label[@for='due']",
+			"secondary": "xpath=//label[@for='due' and contains(@class,'custom-control-label')]",
+			  "tertiary": "xpath=//label[@for='due']/preceding-sibling::input"
+		},
+		"calendar":{
+			"Primary": "xpath=//div[@class='input-group-prepend' and @role='button']",
+				"secondary": "xpath=//div[@class='input-group-prepend']",
+						  "tertiary": "xpath=//div[@role='button' and contains(@class,'input-group-prepend')]"
+		},
+		"calendarMonth":{
+					"Primary": "xpath=//select[@title='Select month']",
+						"secondary": "xpath=//select[@title='Select month' and @aria-label='Select month']",
+								  "tertiary": "xpath=//select[contains(@class,'custom-select') and contains(@title,'month')]"
+				},
+			"calendarYear":{
+						"Primary": "xpath=//select[@title='Select year']",
+							"secondary": "xpath=//select[@title='Select year' and @aria-label='Select year']",
+									"tertiary": "xpath=//select[contains(@class,'custom-select') and contains(@title,'year')]"
+				},
+			"calendarDate":{
+						"Primary": "xpath=//div[@class='ngb-dp-day']//span[@class='custom-day' and normalize-space()='${value}']",
+							"secondary": "xpath=//span[@class='custom-day' and normalize-space()='1']",
+									"tertiary": "xpath=//span[contains(@class,'custom-day') and normalize-space()='${value}']"
+								}
+	}
+}

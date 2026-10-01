@@ -1,0 +1,14 @@
+{
+	"commonPage": {
+		"userMenuLink": {
+			"primary": "xpath=//div[contains(@class,'user-menu')]//button[@class='user-menu-link']",
+			"secondary": "css=div.user-menu button.user-menu-link",
+			"tertiary": "xpath=//button[contains(@class,'user-menu-link')]"
+		},
+		"userMenuLoginButton": {
+			"primary": "xpath=//div[@class='static-menu-item'][.//strong[normalize-space()='${value}']]//butto[contains(@class,'login-button')]",
+			"secondary": "xpath=//strong[normalize-space()='${value}']/ancestor::div[contains(@class,'static-menu-item')]//button[contains(@class,'login-button')]",
+			"tertiary": "xpath=//div[contains(@class,'static-menu-item')][.//*[text()[normalize-space()='${value}']]]//button[contains(@class,'login-button')]"
+		}
+	}
+}

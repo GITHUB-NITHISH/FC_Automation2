@@ -1,0 +1,52 @@
+/*{
+	"Credentials": {
+		"UserName": "nithish-k",
+		"Password": "St3$TJxL"
+	},
+	"createApAccount": {
+		"AccountName": "KsNew7613535",
+		"AccountCreationSuccessMessage": "A/P Account <AccountName> has been created successfully."
+	},
+	"createApAccountNegative": {
+		"ExistingAccountName": "abtest1",
+		"ExistingAccountErrorMessage": "An account with a similar name already exists."
+	},
+	"duplicateApAccount": {
+		"AccountName": "KsNew761242",
+		"DuplicateAccountName": "DupKsNew5437723",
+		"DuplicateModalMessage": "A/P Account <DuplicateAccountName> has been duplicated successfully."
+	},
+	"duplicateApAccountNegative": {
+		"AccountName": "DupKsNew5437723",
+		"ExistingAccountName": "Account_115",
+		"DuplicateAccountErrorMessage": "Could not Duplicate account"
+	},
+	"searchApAccountWithAccount": {
+		"AccountName": "Account_REG"
+	},
+	"searchApAccountWithPayee": {
+		"PayeeNames": "Rajesh QA,Martin,Lingam Ap",
+		"AccountName": "QA Team"
+	},
+	"searchApAccountWithAccountAndPayee": {
+		"AccountName": "QA Team",
+		"PayeeNames": "Rajesh QA,Martin,Lingam Ap"
+	},
+	"archiveApAccount": {
+		"AccountName": "DupKsNew5437723",
+		"ArchiveModalMessage": "A/P Account archived successfully"
+	},
+	"restoreApAccount": {
+		"AccountName": "Account_B",
+		"RestoreModalMessage": "A/P Account restored successfully"
+	},
+	"deleteApAccount": {
+		"AccountName": "Account_A1",
+		"AccountDeletionConfirmationMessage": "Are you sure you want to delete this account? By deleting this account, 1 payees will no longer be linked",
+		"AccountDeletionSuccessMessage": "A/P Account deleted successfully"
+	},
+	"deleteApAccountNegative": {
+		"AccountName": "ABCBCS",
+		"DeleteRestrictionMessage": "You cannot delete this account. Since it is already referred in Payable transactions"
+	}
+}  */

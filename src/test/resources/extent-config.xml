@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extentreports>
+
+    <configuration>
+
+        <!-- ========================= -->
+        <!-- REPORT LOOK & FEEL -->
+        <!-- ========================= -->
+
+        <theme>dark</theme>
+
+        <documentTitle>
+            Selenium BDD Automation Report
+        </documentTitle>
+
+        <reportName>
+            Enterprise Automation Execution Report
+        </reportName>
+
+        <encoding>UTF-8</encoding>
+
+        <protocol>https</protocol>
+
+        <timelineEnabled>true</timelineEnabled>
+
+        <timeStampFormat>
+            dd.MM.yyyy hh:mm:ss a
+        </timeStampFormat>
+
+        <!-- ========================= -->
+        <!-- DASHBOARD SETTINGS -->
+        <!-- ========================= -->
+
+        <charts>true</charts>
+
+        <testViewChartLocation>top</testViewChartLocation>
+
+        <chartVisibilityOnOpen>true</chartVisibilityOnOpen>
+
+        <!-- ========================= -->
+        <!-- CUSTOM CSS -->
+        <!-- ========================= -->
+
+        <css>
+
+            .nav-wrapper {
+                background: linear-gradient(90deg,#0f172a,#111827) !important;
+            }
+
+            .brand-logo {
+                color: #ffffff !important;
+                font-size: 22px !important;
+                font-weight: 600 !important;
+            }
+
+            .report-name {
+                color: #60a5fa !important;
+                font-weight: 600 !important;
+            }
+
+            .test-name {
+                font-size: 17px !important;
+                font-weight: 600 !important;
+            }
+
+            .badge {
+                border-radius: 8px !important;
+                padding: 5px 10px !important;
+            }
+
+            .pass-bg {
+                background-color: #16a34a !important;
+            }
+
+            .fail-bg {
+                background-color: #dc2626 !important;
+            }
+
+            .skip-bg {
+                background-color: #d97706 !important;
+            }
+
+            .info-bg {
+                background-color: #2563eb !important;
+            }
+
+            .test-content {
+                border-radius: 12px !important;
+                padding: 10px !important;
+            }
+
+            .step {
+                border-radius: 6px !important;
+            }
+
+            pre {
+                border-radius: 10px !important;
+                background-color: #111827 !important;
+                color: #e5e7eb !important;
+                font-size: 13px !important;
+            }
+
+            ::-webkit-scrollbar {
+                width: 8px;
+                height: 8px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #475569;
+                border-radius: 10px;
+            }
+
+            .logo {
+                display: none !important;
+            }
+
+            .side-nav {
+                background-color: #0f172a !important;
+            }
+
+            .card-panel {
+                border-radius: 14px !important;
+            }
+
+            .category {
+                border-radius: 20px !important;
+                padding: 4px 12px !important;
+                font-size: 12px !important;
+            }
+
+            .exception {
+                background-color: #1e293b !important;
+                border-radius: 12px !important;
+            }
+
+            .test-status {
+                font-size: 12px !important;
+                font-weight: bold !important;
+                letter-spacing: 0.5px;
+            }
+
+            .timestamp {
+                color: #cbd5e1 !important;
+            }
+
+            .node {
+                border-radius: 10px !important;
+            }
+
+            .collection .collection-item {
+                background-color: #111827 !important;
+                border-bottom: 1px solid #1e293b !important;
+            }
+
+            body {
+                font-family: 'Segoe UI', sans-serif !important;
+            }
+
+        </css>
+
+        <!-- ========================= -->
+        <!-- CUSTOM JS -->
+        <!-- ========================= -->
+
+        <js>
+
+            document.addEventListener("DOMContentLoaded", function() {
+
+                console.log("Enterprise Extent Report Loaded");
+
+                const reportName = document.querySelector(".report-name");
+
+                if(reportName){
+                    reportName.style.fontSize = "24px";
+                    reportName.style.fontWeight = "700";
+                }
+
+            });
+
+        </js>
+
+    </configuration>
+
+</extentreports>

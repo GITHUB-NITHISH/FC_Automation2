@@ -1,0 +1,52 @@
+{
+	"createNewUserLink": {
+		"primary": "xpath=//a[@href='/admin-users/super-admin/new' or normalize-space()='Create New User']",
+		"secondary": "css=a[href='/admin-users/super-admin/new']",
+		"tertiary": "xpath=//a[contains(@href,'/admin-users/super-admin/new') or contains(normalize-space(),'Create New User')]"
+	},
+	"reportingManagerDropdown": {
+		"primary": "css=select#reportingManagerInput-new",
+		"secondary": "xpath=//select[@name='reportingManager' or @formcontrolname='reportingManager']",
+		"tertiary": "xpath=//select[contains(@class,'custom-select') and contains(@class,'ng-pristine')]"
+	},
+	"firstNameInputField": {
+		"primary": "css=input#firstNameInput",
+		"secondary": "xpath=//input[@name='firstName' or @formcontrolname='firstName']",
+		"tertiary": "xpath=//input[contains(@class,'form-control') and contains(@class,'ng-pristine')]"
+	},
+	"lastNameInputField": {
+		"primary": "css=input#lastNameInput",
+		"secondary": "xpath=//input[@name='lastName' or @formcontrolname='lastName']",
+		"tertiary": "xpath=//input[contains(@class,'form-control') and contains(@class,'ng-pristine')]"
+	},
+	"userNameInputField": {
+		"primary": "css=input#usernameInput",
+		"secondary": "xpath=//input[@name='username' or @formcontrolname='username']",
+		"tertiary": "xpath=//input[contains(@class,'form-control') and contains(@class,'ng-pristine')]"
+	},
+	"fcEmailAddressInputField": {
+		"primary": "css=input#workEmailInput",
+		"secondary": "xpath=//input[@name='workEmail' or @formcontrolname='workEmail']",
+		"tertiary": "xpath=//input[contains(@class,'form-control') and contains(@class,'ng-pristine')]"
+	},
+	"primaryAreaDropdown": {
+		"primary": "xpath=//select[@name='area' or contains(@id,'area')]",
+		"secondary": "css=select[name='area']",
+		"tertiary": "xpath=//div[contains(@class,'form-group')]//select[contains(@class,'custom-select')]"
+	},
+	"createNewUserButton": {
+		"primary": "xpath=//button[normalize-space()='Create New User']",
+		"secondary": "css=button.btn.btn-primary",
+		"tertiary": "xpath=//button[contains(@class,'btn-primary') and .//fa-icon]"
+	},
+	"modalCancelButton": {
+		"primary": "xpath=//button[normalize-space()='Cancel']",
+		"secondary": "xpath=//button[contains(text(),'Cancel')]",
+		"tertiary": "xpath=//[contains(@class,'btn')]"
+	},
+	"homeButton": {
+		"primary": "xpath=//div[contains(@class,'logo-image-container')]/following-sibling::span",
+		"secondary": "xpath=//div[contains(@class,'logo-image-container')]//following::span",
+		"tertiary": "xpath=//span[contains(@class,'logo')]"
+	}
+}

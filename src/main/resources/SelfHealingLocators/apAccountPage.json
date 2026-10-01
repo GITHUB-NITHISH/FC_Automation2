@@ -1,0 +1,239 @@
+{
+	"apAccountPage": {
+		"allAccountNames": {
+			"primary": "xpath=//div[contains(@class,'customer-data')]//div[@class='value-label']",
+			"secondary": "xpath=//div[@class='value-label']",
+			"tertiary": "css=div.customer-data div.value-label"
+		},
+		"payeeDropdownOptions": {
+			"primary": "xpath=//div[@class='dropdown-checkboxes limit-height']//label[text()='${value}']",
+			"secondary": "xpath=//label[normalize-space()='${value}']",
+			"tertiary": "css=div.dropdown-checkboxes label"
+		},
+		"pageSizeDropdown": {
+			"primary": "xpath=//select[@name='pageSize']",
+			"secondary": "css=select[name='pageSize']",
+			"tertiary": "xpath=//select[contains(@name,'pageSize')]"
+		},
+		"apAccountsHeader": {
+			"primary": "xpath=//div[contains(@class,'main-heading')]//h1[normalize-space()='A/P Accounts']",
+			"secondary": "xpath=//h1[normalize-space()='A/P Accounts']",
+			"tertiary": "css=.main-heading h1"
+		},
+		"createNewAccountButton": {
+			"primary": "xpath=//button[normalize-space()='Create New Account']",
+			"secondary": "xpath=//app-ap-accounts//button[contains(text(),'Create')]",
+			"tertiary": "xpath=//button[contains(@class,'btn btn-outline-primary')]"
+		},
+		"clearFilterButton": {
+			"primary": "xpath=//div[contains(@class,'filter-fields')]//button[normalize-space()='Clear Filter']",
+			"secondary": "xpath=//button[normalize-space()='Clear Filter']",
+			"tertiary": "css=.filter-fields button"
+		},
+		"searchButton": {
+			"primary": "xpath=//button[normalize-space()='Search']",
+			"secondary": "css=button[type='submit']",
+			"tertiary": "xpath=//button[contains(text(),'Search')]"
+		},
+		"searchAccountsField": {
+			"primary": "id=keywordSearchInput",
+			"secondary": "css=#keywordSearchInput",
+			"tertiary": "xpath=//input[contains(@id,'keywordSearch')]"
+		},
+		"searchAccountIconButton": {
+			"primary": "xpath=//input[@id='keywordSearchInput']//following-sibling::div//button",
+			"secondary": "css=#keywordSearchInput + div button",
+			"tertiary": "xpath=//button[contains(@class,'search')]"
+		},
+		"allSection": {
+			"primary": "xpath=//label[@class='custom-control-label']//span[contains(text(),'All')]",
+			"secondary": "xpath=//span[normalize-space()='All']",
+			"tertiary": "css=.custom-control-label span"
+		},
+		"activeSection": {
+			"primary": "xpath=//label[@class='custom-control-label']//span[contains(text(),'Active')]",
+			"secondary": "xpath=//span[normalize-space()='Active']",
+			"tertiary": "css=.custom-control-label span"
+		},
+		"archivedSection": {
+			"primary": "xpath=//label[@class='custom-control-label']//span[contains(text(),'Archived')]",
+			"secondary": "xpath=//span[normalize-space()='Archived']",
+			"tertiary": "css=.custom-control-label span"
+		},
+		"createNewApAccountHeader": {
+			"primary": "xpath=//h2[normalize-space()='Create New A/P Account']",
+			"secondary": "xpath=//h2[@class='modal-title' and normalize-space()='Create New A/P Account']",
+			"tertiary": "xpath=//h2[contains(text(),'Create New')]"
+		},
+		"accountNameField": {
+			"primary": "id=accountName",
+			"secondary": "css=#accountName",
+			"tertiary": "xpath=//input[contains(@id,'accountName')]"
+		},
+		"saveAccount": {
+			"primary": "xpath=//ngb-modal-window//button[contains(@class,'primary')]",
+			"secondary": "xpath=//ngb-modal-window//button[normalize-space()='Save Account']",
+			"tertiary": "xpath=//ngb-modal-window//form//button[@type='submit']"
+		},
+		"accountCreatedHeader": {
+			"primary": "xpath=//h2[normalize-space()='Account Created']",
+			"secondary": "css=h2",
+			"tertiary": "xpath=//h2[contains(text(),'Account Created')]"
+		},
+		"modalMessage": {
+			"primary": "xpath=//div[contains(@class,'modal-section-highlighted')]",
+			"secondary": "css=.modal-section-highlighted",
+			"tertiary": "xpath=//div[contains(@class,'modal')]"
+		},
+		"closeButton": {
+			"primary": "xpath=//button[normalize-space()='Close']",
+			"secondary": "xpath=//button[@type='button' and contains(@class,'btn-outline-modal')]",
+			"tertiary": "xpath=//button[@class='btn btn-outline-modal']"
+		},
+		"duplicateAccountOption": {
+			"primary": "xpath=//button[normalize-space()='Duplicate Account']",
+			"secondary": "xpath=//button[contains(text(),'Duplicate')]",
+			"tertiary": "xpath=//button[contains(@class,'link-button-inherit') and normalize-space()='Duplicate Account']"
+		},
+		"archiveAccountOption": {
+			"primary": "xpath=//button[normalize-space()='Archive Account']",
+			"secondary": "xpath=//button[contains(text(),'Archive')]",
+			"tertiary": "xpath=//button[contains(@class,'link-button-inherit') and normalize-space()='Archive Account']"
+		},
+		"deleteAccountOption": {
+			"primary": "xpath=//button[normalize-space()='Delete Account']",
+			"secondary": "xpath=//button[contains(text(),'Delete')]",
+			"tertiary": "xpath=//button[contains(@class,'link-button-inherit') and normalize-space()='Delete Account']"
+		},
+		"restoreAccountOption": {
+			"primary": "xpath=//button[normalize-space()='Restore Account']",
+			"secondary": "xpath=//button[contains(text(),'Restore')]",
+			"tertiary": "css=button"
+		},
+		"deleteAccountButton": {
+			"primary": "xpath=//div[@class='modal-footer']//button[normalize-space()='Delete Account']",
+			"secondary": "xpath=//button[normalize-space()='Delete Account']",
+			"tertiary": "css=.modal-footer button"
+		},
+		"saveChanges": {
+			"primary": "xpath=//button[normalize-space()='Save Changes']",
+			"secondary": "xpath=//button[contains(text(),'Save Changes')]",
+			"tertiary": "css=button"
+		},
+		"ellipsisButton": {
+			"primary": "xpath=//div[normalize-space()='${value}']//parent::div//following-sibling::app-ellipsis-menu//button[@type='button']",
+			"secondary": "xpath=//button[@type='button']",
+			"tertiary": "css=app-ellipsis-menu button"
+		},
+		"newAccountNameField": {
+			"primary": "xpath=//input[@id='accountName']",
+			"secondary": "css=#accountName",
+			"tertiary": "xpath=//input[contains(@id,'accountName')]"
+		},
+		"payeesDropdown": {
+			"primary": "xpath=//label[normalize-space()='Payees']//parent::div//button",
+			"secondary": "xpath=//button[contains(@class,'dropdown')]",
+			"tertiary": "css=button"
+		},
+		"greyOut": {
+			"primary": "xpath=//div[contains(@class,'priority-customer-data-tile')][.//div[@class='value-label' and normalize-space()='${value}']]/child::div",
+			"secondary": "xpath=//div[contains(@class,'priority-customer-data-tile')]//div[@class='value-label' and normalize-space()='${value}']/parent::div",
+			"tertiary": "css=div.priority-customer-data-tile"
+		},
+		"cancelButton": {
+			"primary": "xpath=//button[normalize-space()='Cancel']",
+			"secondary": "xpath=//button[contains(text(),'Cancel')]",
+			"tertiary": "xpath=//button[contains(@class,'btn') and normalize-space()='Cancel']"
+		},
+		"duplicateError": {
+			"primary": "xpath=//div[contains(@class,'modal-body')]//p[contains(text(),'Duplicate account')]",
+			"secondary": "xpath=//p[contains(text(),'Duplicate')]",
+			"tertiary": "css=.modal-body p"
+		},
+		"accountDropdown": {
+			"primary": "xpath=//label[normalize-space()='Select Account']/following-sibling::app-single-select//button[contains(@class,'dropdown-toggle')]",
+			"secondary": "xpath=//label[contains(text(),'Select Account')]/following::button[contains(@class,'dropdown-toggle')]",
+			"tertiary": "xpath=//button[contains(@class,'dropdown-toggle')]"
+		},
+		"accountSearchField": {
+			"primary": "xpath=//div[contains(@class,'single-select-dropdown-menu') and contains(@class,'show')]//input[@placeholder='Search ...']",
+			"secondary": "xpath=//input[@placeholder='Search ...']",
+			"tertiary": "xpath=//input[contains(@placeholder,'Search')]"
+		},
+		"continueButton": {
+			"primary": "xpath=//button[@type='submit' and contains(@class,'btn-primary')]",
+			"secondary": "xpath=//button[@type='submit' and contains(text(),'Continue')]",
+			"tertiary": "xpath=//button[@type='submit']"
+		},
+		"payeeSearchField": {
+			"primary": "xpath=//input[@name='searchText' and contains(@class,'form-control')]",
+			"secondary": "xpath=//input[@name='searchText']",
+			"tertiary": "xpath=//input[contains(@class,'form-control')]"
+		},
+		"payeeDropdown": {
+			"primary": "xpath=//button[contains(@class,'dropdown-toggle') and contains(@class,'custom-select')]",
+			"secondary": "xpath=//button[contains(@class,'custom-select')]",
+			"tertiary": "xpath=//button[contains(@class,'dropdown-toggle')]"
+		},
+		"invoiceDate": {
+			"primary": "xpath=//input[@id='invoiceDate' and @formcontrolname='invoiceDate']",
+			"secondary": "xpath=//input[@id='invoiceDate']",
+			"tertiary": "xpath=//input[contains(@id,'invoiceDate')]"
+		},
+		"payDate": {
+			"primary": "xpath=//input[@id='payDate' and @formcontrolname='payDate']",
+			"secondary": "xpath=//input[@id='payDate']",
+			"tertiary": "xpath=//input[contains(@id,'payDate')]"
+		},
+		"invoiceNumber": {
+			"primary": "xpath=//div[contains(@class,'invoice-container')]//input[@id='invoiceNumber']",
+			"secondary": "xpath=//input[@id='invoiceNumber']",
+			"tertiary": "xpath=//input[contains(@id,'invoiceNumber')]"
+		},
+		"referenceField": {
+			"primary": "xpath=//label[@for='reference']/following::textarea[@id='reference']",
+			"secondary": "xpath=//textarea[@id='reference']",
+			"tertiary": "xpath=//textarea[contains(@id,'reference')]"
+		},
+		"invoiceAmountField": {
+			"primary": "xpath=//input[@id='invoiceAmount']",
+			"secondary": "xpath=//input[contains(@id,'invoiceAmount')]",
+			"tertiary": "xpath=//input[contains(@placeholder,'Amount')]"
+		},
+		"createPayableButton": {
+			"primary": "xpath=//div[contains(@class,'editor-log-actions')]//button[normalize-space()='Create Payable']",
+			"secondary": "xpath=//button[contains(text(),'Create Payable')]",
+			"tertiary": "xpath=//button[contains(@class,'btn')]"
+		},
+		"modalCloseButton": {
+			"primary": "xpath=//button[normalize-space()='Close']",
+			"secondary": "xpath=//button[contains(text(),'Close')]",
+			"tertiary": "xpath=//button[contains(@class,'btn')]"
+		},
+		"homeButton": {
+			"primary": "xpath=//div[contains(@class,'logo-image-container')]/following-sibling::san",
+			"secondary": "xpath=//div[contains(@class,'logo-image-container')]//following::san",
+			"tertiary": "xpath=//span[contains(@class,'logo')]"
+		},
+		"payeeValue": {
+			"primary": "xpath=//div[@class='dropdown-options limit-height']//button[normalize-space()='${value}']",
+			"secondary": "xpath=//div[contains(@class,'dropdown-options')]//button[contains(normalize-space(),'${value}')]",
+			"tertiary": "xpath=//button[contains(text(),'${value}')]"
+		},
+		"accountValue": {
+			"primary": "xpath=//div[contains(@class,'single-select-dropdown-menu') and contains(@class,'show')]//button[contains(normalize-space(),'${value}')]",
+			"secondary": "xpath=//div[contains(@class,'single-select-dropdown-menu')]//button[contains(normalize-space(),'${value}')]",
+			"tertiary": "xpath=//button[contains(text(),'${value}')]"
+		},
+		"linkedPayeesCount": {
+			"primary": "xpath=//div[contains(@class,'customer-data')]//div[@class='value-label' and normalize-space()='${value}']/following-sibling::div[@class='sub-value']",
+			"secondary": "xpath=//div[contains(@class,'customer-data') and .//div[contains(normalize-space(),'${value}')]]//div[contains(@class,'sub-value')]",
+			"tertiary": "xpath=//div[@class='value-label' and normalize-space()='${value}']/parent::div/div[contains(@class,'sub-value')]"
+		},
+		"existingAccountError": {
+			"primary": "xpath=//div[@class='duplicate-feedback']",
+			"secondary": "xpath=//button[@type='button' and contains(@class,'btn-outline-modal')]",
+			"tertiary": "xpath=//div[contains(text(),'An account with a similar name already exists.')]"
+		}
+	}
+}

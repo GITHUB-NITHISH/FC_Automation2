@@ -1,0 +1,52 @@
+{
+	"generateCommissionReportHeader": {
+		"primary": "xpath=//h1[normalize-space()='Generate Commissions Report']",
+		"secondary": "xpath=//div[contains(@class,'main-heading')]//h1[normalize-space()='Generate Commissions Report']",
+		"tertiary": "xpath//h1[@class='m-0' and normalize-space()='Generate Commissions Report']"
+	},
+	"accountManagerDropDown": {
+		"primary": "xpath=//button[@class='dropdown-toggle custom-select']",
+		"secondary": "xpath=//button[contains(@class,'dropdown-toggle') and contains(@class,'custom-select')]",
+		"tertiary": "xpath=//button[.//span[normalize-space()='Select']]"
+	},
+	"accountManagerNamesearch": {
+		"primary": "xpath=//input[@name='searchText' and contains(@class,'form-control')]",
+		"secondary": "xpath=//div[contains(@class,'search-with-clear-button')]//input[@name='searchText']",
+		"tertiary": "xpath=//input[@placeholder='Search']"
+	},
+	"accountManagerNameSearchResult": {
+		"primary": "xpath=//label[contains(normalize-space(),'${value}')]",
+		"seconndary": "xpath=//label[contains(normalize-space(),'${value}')]/preceding-sibling::input[@type='checkbox']",
+		"tertiary": "xpath=//div[contains(@class,'custom-checkbox')][.//label[contains(normalize-space(),'${value}')]]//input"
+	},
+	"accountManagerCheckBox": {
+		"primary": "xpath=//div[@class='custom-control custom-checkbox']",
+		"secondary": "xpath=//label[contains(normalize-space(),'Deselect All')]",
+		"tertiary": "xpath=//div[contains(@class,'custom-checkbox')][.//label[contains(.,'Deselect All')]]//input"
+	},
+	"invoiceDate": {
+		"primary": "xpath=//input[@id='invoiceDate']",
+		"secondary": "xpath=//div[contains(@class,'input-group')][.//button[contains(@class,'calendar')]]//input",
+		"tertiary": "xpath=//button[.//svg[@data-icon='calendar-alt']]/ancestor::div[contains(@class,'input-group')]//input"
+	},
+	"generateButton": {
+		"primary": "xpath= //button[@class='btn btn-primary']",
+		"secondary": "xpath=//button[contains(@class,'btn-primary') and normalize-space()='Generate']",
+		"tertiary": "xpath=//div[contains(@class,'justify-content-end')]//button[normalize-space()='Generate']"
+	},
+	"modalMessage": {
+		"primary": "xpath=//div[@class='modal-section-highlighted']",
+		"secondary": "xpath=//div[contains(@class,'modal-section-highlighted')]",
+		"tertiary": "xpath=//div[contains(@class,'modal-section-highlighted')]"
+	},
+	"IDLink": {
+		"primary": "xpath=//input[contains(@id,'checkbox')]/ancestor::div[contains(@class,'d-flex')]//a",
+		"secondary": "xpath=//a[contains(@class,'text-primary') and contains(@class,'selectable')]",
+		"tertiary": "xpath=//tr[contains(@class,'table-tr')]//div[contains(@class,'d-flex')]//a"
+	},
+	"closeButton": {
+		"primary": "xpath=//button[normalize-space()='Close']",
+		"secondary": "xpath=//button[contains(@class,'btn-outline-modal') and normalize-space()='Close']",
+		"tertiary": "xpath=//div[contains(@class,'modal-footer')]//button[normalize-space()='Close']"
+	}
+}

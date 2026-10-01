@@ -1,0 +1,29 @@
+{
+	
+	"ApAccountData": {
+		"AccountCreationSuccessMessage" : "A/P Account <AccountName> has been created successfully.",
+		"ExistingAccountErrorMessage" : "An account with a similar name already exists.",
+		"DuplicateModalMessage" : "A/P Account <DuplicateAccountName> has been duplicated successfully.",
+		"DuplicateAccountErrorMessage" : "Could not Duplicate account",
+		"ArchiveModalMessage" : "A/P Account archived successfully",
+		"RestoreModalMessage" : "A/P Account restored successfully",
+		"AccountDeletionConfirmationMessage" : "Are you sure you want to delete this account? By deleting this account, <count> payees will no longer be linked",
+		"AccountDeletionSuccessMessage" : "A/P Account deleted successfully",
+		"DeleteRestrictionMessage" : "You cannot delete this account. Since it is already referred in Payable transactions"
+	},
+	"AccountManagerData":{
+		"AccountManagerCreationSuccessMessage" : "Account Manager created successfully.",
+		"AccountManagerUpdationSuccessMessage" : "Account Manager updated successfully.",
+		"CommissionRuleUpdationMessage": "Commission rules have been updated successfully."
+	},
+	"PayeeData":{
+		"PayeeCreationSuccessMessage": "Payee <PayeeName> has been created successfully."
+	},
+	"PaymentMethodData":{
+		"PaymentMethodCreationSuccessMessage": "Payment method has been created successfully."
+	},
+	"ApAccountManagerData":{
+		"EditSuccessMessage": "Account manager updated successfully",
+		"StatusSuccessMessage": "Commission status updated successfully."
+	}
+}

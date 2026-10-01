@@ -1,0 +1,202 @@
+{
+		"payeeHeader": {
+			"primary": "xpath=//h1[.//fa-icon[contains(@class,'ng-fa-icon')]]",
+			"secondary": "css=h1:has(fa-icon.ng-fa-icon)",
+			"tertiary": "xpath=//fa-icon[contains(@class,'mr-1')]/parent::h1"
+		},
+		"payeeTile": {
+			"primary": "xpath=//a[@href='ap/admin/payees']",
+			"secondary": "css=a[href='ap/admin/payees']",
+			"tertiary": "xpath=//a[contains(@href,'payees')]"
+		},
+		"addNewPayeeButton": {
+			"primary": "xpath=//button[normalize-space()='Add New Payee']",
+			"secondary": "css=button",
+			"tertiary": "xpath=//button[contains(text(),'Add New Payee')]"
+		},
+		"payeeNameField": {
+			"primary": "xpath=//label[@for='payeeName']//parent::div//input",
+			"secondary": "css=input[formcontrolname='payeeName']",
+			"tertiary": "xpath=//input[contains(@id,'payeeName')]"
+		},
+		"linkToPayeeDropdown": {
+			"primary": "xpath=//label[@id='linkToPayee']//parent::div//button",
+			"secondary": "css=button[aria-haspopup='true']",
+			"tertiary": "xpath=//button[contains(@class,'dropdown-toggle')]"
+		},
+		"linkToPayeeOption": {
+			"primary": "xpath=//div[@class='dropdown-checkboxes limit-height']//label[text()='${value}']",
+			"secondary": "xpath=//label[normalize-space()='${value}']",
+			"tertiary": "css=div.dropdown-checkboxes label"
+		},
+		"mailingAddressField": {
+			"primary": "xpath=//label[@for='mailingAddress']//parent::div//input",
+			"secondary": "css=input[formcontrolname='mailingAddress']",
+			"tertiary": "xpath=//input[contains(@id,'mailingAddress')]"
+		},
+		"validateAddressButton": {
+			"primary": "xpath=//span[normalize-space()='Validate Address']",
+			"secondary": "xpath=//button[contains(.,'Validate Address')]",
+			"tertiary": "css=button"
+		},
+		"address2Field": {
+			"primary": "xpath=//label[@for='mailingAddress2']//parent::div//input",
+			"secondary": "css=input[formcontrolname='mailingAddress2']",
+			"tertiary": "xpath=//input[contains(@id,'mailingAddress2')]"
+		},
+		"unitField": {
+			"primary": "xpath=//label[@for='unit']//parent::div//input",
+			"secondary": "css=input[formcontrolname='unit']",
+			"tertiary": "xpath=//input[contains(@id,'unit')]"
+		},
+		"postalCodeField": {
+			"primary": "xpath=//label[@for='mailingPostalZipCode']//parent::div//input",
+			"secondary": "css=input[formcontrolname='mailingPostalZipCode']",
+			"tertiary": "xpath=//input[contains(@id,'postal')]"
+		},
+		"cityField": {
+			"primary": "xpath=//label[@for='city']//parent::div//input",
+			"secondary": "css=input[formcontrolname='city']",
+			"tertiary": "xpath=//input[contains(@id,'city')]"
+		},
+		"provinceField": {
+			"primary": "xpath=//label[@for='mailingProvinceState']//following-sibling::app-single-select[@formcontrolname='provinceState']//span[@class='selected-value']",
+			"secondary": "css=app-single-select[formcontrolname='provinceState'] span.selected-value",
+			"tertiary": "xpath=//span[contains(@class,'selected-value')]"
+		},
+		"countryField": {
+			"primary": "xpath=//label[@for='country']//following-sibling::app-single-select[@formcontrolname='country']//span[@class='selected-value']",
+			"secondary": "css=app-single-select[formcontrolname='country'] span.selected-value",
+			"tertiary": "xpath=//span[contains(@class,'selected-value')]"
+		},
+		"contactNameField": {
+			"primary": "xpath=//label[@for='ContactName']//parent::div//input",
+			"secondary": "css=input[formcontrolname='ContactName']",
+			"tertiary": "xpath=//input[contains(@id,'ContactName')]"
+		},
+		"emailAddressField": {
+			"primary": "xpath=//label[@for='email']//parent::div//input",
+			"secondary": "css=input[type='email']",
+			"tertiary": "xpath=//input[contains(@id,'email')]"
+		},
+		"phoneNumberField": {
+			"primary": "xpath=//label[@for='phone']//parent::div//input",
+			"secondary": "css=input[formcontrolname='phone']",
+			"tertiary": "xpath=//input[contains(@id,'phone')]"
+		},
+		"extensionField": {
+			"primary": "xpath=//label[@for='extension']//parent::div//input",
+			"secondary": "css=input[formcontrolname='extension']",
+			"tertiary": "xpath=//input[contains(@id,'extension')]"
+		},
+		"billingAddressCheckBox": {
+			"primary": "xpath=//label[normalize-space()='Billing address same as mailing address']",
+			"secondary": "xpath=//input[@type='checkbox']",
+			"tertiary": "css=input[type='checkbox']"
+		},
+		"billingAddressField": {
+			"primary": "xpath=//label[@for='billingAddress']//parent::div//input",
+			"secondary": "css=input[formcontrolname='billingAddress']",
+			"tertiary": "xpath=//input[contains(@id,'billingAddress')]"
+		},
+		"billingAddressValidateButton": {
+			"primary": "xpath=//h3[normalize-space()='Billing Address']//parent::div//following-sibling::div//span[normalize-space()='Validate Address']//ancestor::button",
+			"secondary": "xpath=//button[contains(.,'Validate Address')]",
+			"tertiary": "css=button"
+		},
+		"preferredCadPaymentMethodDropdown": {
+			"primary": "xpath=//label[@for='preferredCadPaymentMethod']//parent::div//button//span",
+			"secondary": "xpath=//label[contains(text(),'Preferred CAD Payment Method')]/parent::*//button[contains(@class,'single-select-btn')]",
+			"tertiary": "xpath=//label[@for='preferredCadPaymentMethod']/following-sibling::*//button[@ngbdropdowntoggle]"
+		},
+		"preferredUsdPaymentMethodDropdown": {
+			"primary": "xpath=//label[@for='preferredUsdPaymentMethod']//parent::div//button//span",
+			"secondary": "xpath=//label[@for='preferredUsdPaymentMethod']/following::span[contains(text(),'Always ask')]",
+			"tertiary": "xpath=//button[.//span[normalize-space()='Always ask']]"
+		},
+		"cadPaymentMethodDropdownSearch": {
+			"primary": "xpath=//label[@for='preferredCadPaymentMethod']/parent::div//input[@placeholder='Search ...']",
+			"secondary": "xpath=//label[contains(text(),'Preferred CAD Payment Method')]/parent::div//input[@placeholder='Search ...']",
+			"tertiary": "xpath=//label[@for='preferredCadPaymentMethod']/ancestor::div[contains(@class,'form-group')]//input[@placeholder='Search ...']"
+		},
+		"cadPaymentMethodSearchResult": {
+			"primary": "xpath=//label[@for='preferredCadPaymentMethod']/parent::div//button[contains(@class,'dropdown-item') and contains(text(),'${value}')]",
+			"secondary": "xpath=//label[@for='preferredCadPaymentMethod']/ancestor::div[contains(@class,'form-group')]//button[contains(@class,'dropdown-item') and contains(normalize-space(),'${value}')]",
+			"tertiary": "xpath=//button[contains(@class,'searchable-select-option') and contains(normalize-space(), '${value}')]"
+		},
+		"usdPaymentMethodDropdownSearch": {
+			"primary": "xpath=//div[@class='single-select-dropdown-menu dropdown-menu show']//parent::div//input",
+			"secondary": "xpath=//label[contains(text(),'Preferred USD Payment Method')]/parent::div//input[@placeholder='Search ...']",
+			"tertiary": "xpath=//label[@for='preferredUsdPaymentMethod']/ancestor::div[contains(@class,'form-group')]//input[@placeholder='Search ...']"
+		},
+		"usdPaymentMethodSearchResult": {
+			"primary": "xpath=//label[@for='preferredUsdPaymentMethod']/parent::div//button[contains(@class,'dropdown-item') and contains(text(),'${value}')]",
+			"secondary": "xpath=//label[@for='preferredUsdPaymentMethod']/ancestor::div[contains(@class,'form-group')]//button[contains(@class,'dropdown-item') and contains(normalize-space(),'${value}')]",
+			"tertiary": "xpath=//button[contains(@class,'searchable-select-option') and contains(normalize-space(), '${value}')]"
+		},
+		"selectAccountDropdown": {
+			"primary": "xpath=//label[@id='linkAccounts']/following::div//button[@class='dropdown-toggle custom-select']",
+			"secondary": "xpath=//label[@id='linkAccounts']/following::div//button[contains(@class,'dropdown-toggle')]",
+			"tertiary": "xpath=//label[@id='linkAccounts']/following::button[contains(@class,'custom-select') and @type='button']"
+		},
+		"selectAccountDropdownSearch": {
+			"primary": "xpath=//label[@id='linkAccounts']/following::div//input[@class='form-control ng-valid ng-dirty ng-touched']",
+			"secondary": "xpath=//label[@id='linkAccounts']/following::input[contains(@class,'form-control')]",
+			"tertiary": "xpath=//label[@id='linkAccounts']/following::div//input[contains(@class,'ng-valid') and (@id='searchText-XhVexKno')]"
+		},
+		"selectAccountSearchResult": {
+			"primary": "xpath=//div[contains(@class,'show dropdown')]//button[@aria-expanded='true']//following::div//label[normalize-space()='${value}']",
+			"secondary": "xpath=//div[contains(@class,'show dropdown')]//label[contains(normalize-space(), '${value}')]",
+			"tertiary": "xpath=//button[@aria-expanded='true']//following::label[contains(normalize-space(), '${value}')]"
+		},
+		"savePayeeButton": {
+			"primary": "xpath=//button[contains(@type,'submit') and normalize-space()='Save Payee']",
+			"secondary": "css=button[type='submit']",
+			"tertiary": "xpath=//button[contains(text(),'Save Payee')]"
+		},
+		"payeeCreatedPopupModal": {
+			"primary": "xpath=//h2[normalize-space()='Payee Created']//following::div[@class='modal-section-highlighted']",
+			"secondary": "xpath=//div[contains(@class,'modal-section-highlighted')]",
+			"tertiary": "css=.modal-section-highlighted"
+		},
+		"closeButton": {
+			"primary": "xpath=//button[text()='Close']",
+			"secondary": "css=button",
+			"tertiary": "xpath=//button[contains(text(),'Close')]"
+		},
+		"payeeDetailsDropdown": {
+			"primary": "xpath=//label[normalize-space()='Payees Details']//parent::div//button",
+			"secondary": "css=button.dropdown-toggle",
+			"tertiary": "xpath=//button[contains(@aria-expanded,'false')]"
+		},
+		"payeeDetailsSearchField": {
+			"primary": "xpath=//label[normalize-space()='Search:']//parent::div//input",
+			"secondary": "css=input[type='search']",
+			"tertiary": "xpath=//input[contains(@placeholder,'Search')]"
+		},
+		"payeeDetailsOption": {
+			"primary": "xpath=//div[contains(@class,'show dropdown')]//button[@aria-expanded='true']//following::div//label[normalize-space()='${value}']",
+			"secondary": "xpath=//label[normalize-space()='${value}']",
+			"tertiary": "css=label"
+		},
+		"searchButton": {
+			"primary": "xpath=//button[normalize-space()='Search']",
+			"secondary": "css=button[type='submit']",
+			"tertiary": "xpath=//button[contains(text(),'Search')]"
+		},
+		"payeeAccountResult": {
+			"primary": "xpath=//div[contains(@class,'d-flex flex-column')]//strong[contains(normalize-space(), '${value}')]",
+			"secondary": "xpath=//strong[contains(normalize-space(), '${value}')]",
+			"tertiary": "xpath=//div[contains(@class,'d-flex')]//strong[contains(text(),'${value}')]"
+		},
+		"clearFilters": {
+			"primary": "xpath=//button[normalize-space()='Clear Filters']",
+			"secondary": "css=button",
+			"tertiary": "xpath=//button[contains(text(),'Clear')]"
+		},
+		"homeButton": {
+			"primary": "xpath=//div[contains(@class,'logo-image-container')]/following-sibling::span",
+			"secondary": "xpath=//div[contains(@class,'logo-image-container')]//following::span",
+			"tertiary": "xpath=//span[contains(@class,'logo')]"
+		}
+}

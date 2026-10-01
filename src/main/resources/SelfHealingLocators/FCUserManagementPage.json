@@ -1,0 +1,77 @@
+{
+	"createNewUserLink": {
+		"primary": "xpath=//a[@href='/admin-users/super-admin/new' or normalize-space()='Create New User']",
+		"secondary": "css=a[href='/admin-users/super-admin/new']",
+		"tertiary": "xpath=//a[contains(@href,'/admin-users/super-admin/new') or contains(normalize-space(),'Create New User')]"
+	},
+	"startDateInputField": {
+	    "primary": "xpath=//input[@id='startDateInput']",
+	    "secondary": "xpath=//input[@name='startDate' or @formcontrolname='startDate']",
+	    "tertiary": "xpath=//div[contains(@class,'date-picker-group')]//input[contains(@class,'form-control')]"
+	},
+	"reportingManagerDropdown": {
+		"primary": "css=select#reportingManagerInput-new",
+		"secondary": "xpath=//select[@name='reportingManager' or @formcontrolname='reportingManager']",
+		"tertiary": "xpath=//select[contains(@class,'custom-select') and contains(@class,'ng-pristine')]"
+	},
+	"firstNameInputField": {
+		"primary": "css=input#firstNameInput",
+		"secondary": "xpath=//input[@name='firstName' or @formcontrolname='firstName']",
+		"tertiary": "xpath=//input[contains(@class,'form-control') and contains(@class,'ng-pristine')]"
+	},
+	"lastNameInputField": {
+		"primary": "css=input#lastNameInput",
+		"secondary": "xpath=//input[@name='lastName' or @formcontrolname='lastName']",
+		"tertiary": "xpath=//input[contains(@class,'form-control') and contains(@class,'ng-pristine')]"
+	},
+	"workPhoneInputField": {
+	    "primary": "xpath=//input[@id='workPhoneNumberInput']",
+	    "secondary": "xpath=//input[@name='workPhoneNumber' or @formcontrolname='workPhoneNumber']",
+	    "tertiary": "xpath=//label[text()='Work Phone Number']/following::input[1]"
+	},
+	"extensionInputField": {
+	    "primary": "xpath=//input[@id='extensionInput']",
+	    "secondary": "xpath=//input[@name='extension' or @formcontrolname='extension']",
+	    "tertiary": "xpath=//label[text()='Extension']/following::input[1]"
+	},
+	"personalPhoneInputField": {
+	    "primary": "xpath=//input[@id='personalPhoneNumberInput']",
+	    "secondary": "xpath=//input[@name='personalPhoneNumber' or @formcontrolname='personalPhoneNumber']",
+	    "tertiary": "xpath=//label[text()='Personal Phone Number']/following::input[1]"
+	},
+	"userNameInputField": {
+		"primary": "css=input#usernameInput",
+		"secondary": "xpath=//input[@name='username' or @formcontrolname='username']",
+		"tertiary": "xpath=//input[contains(@class,'form-control') and contains(@class,'ng-pristine')]"
+	},
+	"personalEmailAddressInputField": {
+	    "primary": "xpath=//input[@id='personalEmailInput']",
+	    "secondary": "xpath=//input[@name='personalEmail' or @formcontrolname='personalEmail']",
+	    "tertiary": "xpath=//label[text()='Personal Email Address']/following::input[1]"
+	},
+	"fcEmailAddressInputField": {
+		"primary": "css=input#workEmailInput",
+		"secondary": "xpath=//input[@name='workEmail' or @formcontrolname='workEmail']",
+		"tertiary": "xpath=//input[contains(@class,'form-control') and contains(@class,'ng-pristine')]"
+	},
+	"primaryAreaDropdown": {
+		"primary": "xpath=//select[@name='area' or contains(@id,'area')]",
+		"secondary": "css=select[name='area']",
+		"tertiary": "xpath=//div[contains(@class,'form-group')]//select[contains(@class,'custom-select')]"
+	},
+	"createNewUserButton": {
+		"primary": "xpath=//button[normalize-space()='Create New User']",
+		"secondary": "css=button.btn.btn-primary",
+		"tertiary": "xpath=//button[contains(@class,'btn-primary') and .//fa-icon]"
+	},
+	"modalCancelButton": {
+		"primary": "xpath=//button[normalize-space()='Cancel']",
+		"secondary": "xpath=//button[contains(text(),'Cancel')]",
+		"tertiary": "xpath=//[contains(@class,'btn')]"
+	},
+	"homeButton": {
+		"primary": "xpath=//div[contains(@class,'logo-image-container')]/following-sibling::span",
+		"secondary": "xpath=//div[contains(@class,'logo-image-container')]//following::span",
+		"tertiary": "xpath=//span[contains(@class,'logo')]"
+	}
+}

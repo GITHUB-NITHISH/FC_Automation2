@@ -1,0 +1,229 @@
+{
+	"salesPage": {
+		"salesDashboardHeader": {
+			"primary": "xpath=//a[normalize-space()='Dashboard' and @href='/sales/admin/dashboard']",
+			"secondary": "css=a[href='/sales/admin/dashboard']",
+			"tertiary": "xpath=//a[contains(@href,'/sales/admin/dashboard')]"
+		},
+		"salesDropdown": {
+			"primary": "xpath=//li//following::button[normalize-space()='Sales']",
+			"secondary": "css=button:has-text('Sales')",
+			"tertiary": "xpath=//button[contains(normalize-space(),'Sales')]"
+		},
+		"salesDropdownOption": {
+			"primary": "xpath=//div[@class='main-menu-dropdown-content']//a[normalize-space()='${value}']",
+			"secondary": "css=.main-menu-dropdown-content a:text('${value}')",
+			"tertiary": "xpath=//a[contains(normalize-space(),'${value}')]"
+		},
+		"salesDropdownDefaultLanding": {
+			"primary": "xpath=//div[@class='card-body']//descendant::li[4]//a[normalize-space()='Edit Commissions']",
+			"secondary": "css=.card-body li:nth-child(4) a",
+			"tertiary": "xpath=//a[normalize-space()='Edit Commissions']"
+		},
+		"editCommissionSection": {
+			"primary": "xpath=//a[normalize-space()='Edit Commissions']",
+			"secondary": "css=a:has-text('Edit Commissions')",
+			"tertiary": "xpath=//a[contains(normalize-space(),'Edit Commissions')]"
+		},
+		"editAccountManagerSection": {
+			"primary": "xpath=//a[normalize-space()='Edit Account Manager']",
+			"secondary": "css=a:has-text('Edit Account Manager')",
+			"tertiary": "xpath=//a[contains(normalize-space(),'Edit Account Manager')]"
+		},
+		"createNewAccountManagerSection": {
+			"primary": "xpath=//a[normalize-space()='Create New Account Manager']",
+			"secondary": "css=a:has-text('Create New Account Manager')",
+			"tertiary": "xpath=//a[contains(normalize-space(),'Create New Account Manager')]"
+		},
+		"createNewAccountManagerPageHeader": {
+			"primary": "xpath=//h3[normalize-space()='Create New Account Manager']",
+			"secondary": "css=h3",
+			"tertiary": "xpath=//h3[contains(normalize-space(),'Create New Account Manager')]"
+		},
+		"accountManagerTypeRadioButton": {
+			"primary": "xpath=//label[normalize-space()='${value}']",
+			"secondary": "css=label:has-text('${value}')",
+			"tertiary": "xpath=//label[contains(normalize-space(),'${value}')]"
+		},
+		"existingFreightcomUserDropdown": {
+			"primary": "xpath=//label[normalize-space()='Select Existing Freightcom User']//following-sibling::app-single-select//button[@ngbdropdowntoggle]",
+			"secondary": "css=.form-group.required span",
+			"tertiary": "xpath=//span[normalize-space()='Select']"
+		},
+		"existingFreightcomUserDropdownSearchField": {
+			"primary": "xpath=//label[normalize-space()='Select Existing Freightcom User']//following-sibling::app-single-select//input[@placeholder='Search ...']",
+			"secondary": "css=.single-select-container.show.dropdown input[placeholder*='Search']",
+			"tertiary": "xpath=//input[contains(@placeholder,'Search')]"
+		},
+		"existingFreightcomUserDropdownOptions": {
+			"primary": "xpath=//label[normalize-space()='Select Existing Freightcom User']//following-sibling::app-single-select//button[@ngbdropdownitem and normalize-space()='${value}']",
+			"secondary": "css=.dropdown-options span:text('${value}')",
+			"tertiary": "xpath=//span[contains(normalize-space(),'${value}')]"
+		},
+		"addtoSalesTeamDropdown": {
+			"primary": "xpath=//label[normalize-space()='Add to Sales Team']//following-sibling::app-single-select//button[@ngbdropdowntoggle]",
+			"secondary": "css=button[aria-expanded='false'] span",
+			"tertiary": "xpath=//label[contains(normalize-space(),'Add to Sales Team')]//following::span[normalize-space()='Select']"
+		},
+		"addtoSalesTeamDropdownSearchField": {
+			"primary": "xpath=//label[normalize-space()='Add to Sales Team']//following-sibling::app-single-select//input[@placeholder='Search ...']",
+			"secondary": "css=.form-group input[placeholder*='Search']",
+			"tertiary": "xpath=//input[contains(@placeholder,'Search')]"
+		},
+		"addtoSalesTeamDropdownOptions": {
+			"primary": "xpath=//label[normalize-space()='Add to Sales Team']//following-sibling::app-single-select//button[@ngbdropdownitem and normalize-space()='${value}']",
+			"secondary": "css=.single-select-container.show.dropdown span:text('${value}')",
+			"tertiary": "xpath=//span[contains(normalize-space(),'${value}')]"
+		},
+		"startDateField": {
+			"primary": "xpath=//input[@id='startDateInput']",
+			"secondary": "css=input#startDateInput",
+			"tertiary": "xpath=//input[contains(@id,'startDate')]"
+		},
+		"firstNameField": {
+			"primary": "xpath=//input[@id='firstNameInput']",
+			"secondary": "css=input#firstNameInput",
+			"tertiary": "xpath=//input[contains(@id,'firstName')]"
+		},
+		"lastNameField": {
+			"primary": "xpath=//input[@id='lastNameInput']",
+			"secondary": "css=input#lastNameInput",
+			"tertiary": "xpath=//input[contains(@id,'lastName')]"
+		},
+		"workPhoneNumberField": {
+			"primary": "xpath=//input[@id='workPhoneNumberInput']",
+			"secondary": "css=input#workPhoneNumberInput",
+			"tertiary": "xpath=//input[contains(@id,'workPhoneNumber')]"
+		},
+		"extensionField": {
+			"primary": "xpath=//input[@id='extensionInput']",
+			"secondary": "css=input#extensionInput",
+			"tertiary": "xpath=//input[contains(@id,'extension')]"
+		},
+		"usernameField": {
+			"primary": "xpath=//input[@id='userNameInput']",
+			"secondary": "css=input#userNameInput",
+			"tertiary": "xpath=//input[contains(@id,'userName')]"
+		},
+		"freightcomEmailAddressField": {
+			"primary": "xpath=//input[@id='freightComEmailInput']",
+			"secondary": "css=input#freightComEmailInput",
+			"tertiary": "xpath=//input[contains(@id,'freightComEmail')]"
+		},
+		"assignRoleDropdown": {
+			"primary": "xpath=//select[@id='rolesInput-new']",
+			"secondary": "css=select#rolesInput-new",
+			"tertiary": "xpath=//select[contains(@id,'rolesInput')]"
+		},
+		"initialSignupCodeField": {
+			"primary": "xpath=//input[@id='signUpCodeInput']",
+			"secondary": "css=input#signUpCodeInput",
+			"tertiary": "xpath=//input[contains(@id,'signUpCode')]"
+		},
+		"saveNewAccountManagerButton": {
+			"primary": "xpath=//button[normalize-space()='Save New Account Manager']",
+			"secondary": "css=button:has-text('Save New Account Manager')",
+			"tertiary": "xpath=//button[contains(normalize-space(),'Save New Account Manager')]"
+		},
+		"cellPhoneNumberField": {
+			"primary": "xpath=//input[@id='cellPhoneNumberInput']",
+			"secondary": "css=input#cellPhoneNumberInput",
+			"tertiary": "xpath=//input[contains(@id,'cellPhoneNumber')]"
+		},
+		"personalEmailAddressField": {
+			"primary": "xpath=//input[@id='personalEmailInput']",
+			"secondary": "css=input#personalEmailInput",
+			"tertiary": "xpath=//input[contains(@id,'personalEmail')]"
+		},
+		"uploadImageLink": {
+			"primary": "xpath=//label[normalize-space()='Profile Image']//following::app-file-uploader//input[@type='file']",
+			"secondary": "css=app-file-uploader input[type='file']",
+			"tertiary": "xpath=//input[@type='file']"
+		},
+		"operationalCostToggle": {
+			"primary": "xpath=//label[normalize-space()='Operational Cost']//following::label[@for='showOnlyChangeRequest']",
+			"secondary": "css=label[for='showOnlyChangeRequest']",
+			"tertiary": "xpath=//label[normalize-space()='Operational Cost']//following::input[@id='showOnlyChangeRequest']"
+		},
+		"OpCostRevenuePercentField": {
+			"primary": "xpath=//th[normalize-space()='% Revenue']//following::td[normalize-space()='${value}']//following-sibling::td//input[@formcontrolname='revenue']",
+			"secondary": "css=input[formcontrolname='revenue']",
+			"tertiary": "xpath=//input[contains(@formcontrolname,'revenue')]"
+		},
+		"OpCostPerShipmentCostField": {
+			"primary": "xpath=//tbody//descendant::td[normalize-space()='${value}']//following-sibling::td//input[@formcontrolname='perShipment']",
+			"secondary": "css=tbody[formarrayname='shipments'] input[formcontrolname='perShipment']",
+			"tertiary": "xpath=//input[contains(@formcontrolname,'perShipment')]"
+		},
+		"OpCostEditButton": {
+			 "primary": "xpath=//tbody//descendant::td[normalize-space()='${value}']//following-sibling::td//button[normalize-space()='Edit']",
+			 "secondary": "css=tbody[formarrayname='shipments'] button",
+			 "tertiary": "xpath=//button[contains(@formcontrolname,'perShipment')]"
+		},
+		"modalMessage": {
+			"primary": "xpath=//div[contains(@class,'modal-section-highlighted')]",
+			"secondary": "css=.modal-section-highlighted",
+			"tertiary": "xpath=//div[contains(@class,'modal')]"
+		},
+		"AccountManagerDropdown": {
+			"primary": "xpath=//label[contains(normalize-space(),'Select Account Manager')]//following-sibling::app-single-select//button[@ngbdropdowntoggle]",
+			"secondary": "xpath=//label[contains(normalize-space(),'Select Account Manager')]//following-sibling::app-single-select//button",
+			"tertiary": "xpath=//app-single-select//button[@ngbdropdowntoggle and contains(@class,'dropdown-toggle')]"
+		},
+		"AccountManagerSearchInput": {
+			"primary": "xpath=//label[contains(normalize-space(),'Select Account Manager')]//following-sibling::app-single-select//input[@placeholder='Search ...']",
+			"secondary": "xpath=//label[contains(normalize-space(),'Select Account Manager')]//following-sibling::app-single-select//input",
+			"tertiary": "xpath=//app-single-select//input[contains(@placeholder,'Search')]"
+		},
+		"AccountManagerDropdownOption": {
+			"primary": "xpath=//label[contains(normalize-space(),'Select Account Manager')]//following-sibling::app-single-select//button[@ngbdropdownitem and normalize-space()='${value}']",
+			"secondary": "xpath=//label[contains(normalize-space(),'Select Account Manager')]//following-sibling::app-single-select//button[@ngbdropdownitem and contains(normalize-space(),'${value}')]",
+			"tertiary": "xpath=//app-single-select//button[@ngbdropdownitem and contains(text(),'${value}')]"
+		},
+		"CommissionStructureType": {
+			"primary": "xpath=//label[normalize-space()='Commission Structure']//following-sibling::div//label[normalize-space()='${value}']",
+			"secondary": "xpath=//label[contains(normalize-space(),'Commission Structure')]//following-sibling::div//label[contains(normalize-space(),'${value}')]",
+			"tertiary": "xpath=//div[contains(@class,'commission')]//label[contains(text(),'${value}')]"
+		},
+		"ShipmentAmountField": {
+			"primary": "xpath=//table[.//th[normalize-space()='${value}']]//tr[td[normalize-space()='${value}']]//td[count(ancestor::table/thead//th[normalize-space()='Shipment Amount($)']/preceding-sibling::th)+1]//input",
+			"secondary": "xpath=//th[normalize-space()='${value}']/ancestor::table//span[normalize-space()='${value}']/ancestor::tr//input[@formcontrolname]",
+			"tertiary": "xpath=//table[contains(.,'${value}')]//tr[contains(.,'${value}')]//input"
+		},
+		"GrossProfitField": {
+			"primary": "xpath=//table[.//th[normalize-space()='${value}']]//tr[td[normalize-space()='${value}']]//td[count(ancestor::table/thead//th[normalize-space()='Gross Profit (%)']/preceding-sibling::th)+1]//input",
+			"secondary": "xpath=//th[normalize-space()='${value}']/ancestor::table//span[normalize-space()='${value}']/ancestor::tr//input[@formcontrolname]",
+			"tertiary": "xpath=//table[contains(.,'${value}')]//tr[contains(.,'${value}')]//input"
+		},
+		"RevenueField": {
+			"primary": "xpath=//table[.//th[normalize-space()='${value}']]//tr[td[normalize-space()='${value}']]//td[count(ancestor::table/thead//th[normalize-space()='Revenue (%)']/preceding-sibling::th)+1]//input",
+			"secondary": "xpath=//th[normalize-space()='${value}']/ancestor::table//span[normalize-space()='${value}']/ancestor::tr//input[@formcontrolname]",
+			"tertiary": "xpath=//table[contains(.,'${value}')]//tr[contains(.,'${value}')]//input"
+		},
+		"saveCommissionButton": {
+		    "primary": "xpath=//button[normalize-space()='Save Commissions']",
+		    "secondary": "css=button.btn-primary",
+		    "tertiary": "xpath=//button[@type='submit' and contains(.,'Save')]"
+		},
+		"saveChangesButton": {
+		    "primary": "xpath=//button[normalize-space()='Save Changes']",
+		    "secondary": "css=button.btn-primary",
+		    "tertiary": "xpath=//button[@type='button' and contains(.,'Save')]"
+		},
+	    "commissionRuleSaveChangesButton": {
+			"primary": "xpath=//div[@class='commission-rule-table'][.//th[normalize-space()='${value}']]//button[normalize-space()='Save Changes']",
+			"secondary": "xpath=//div[contains(@class,'commission-rule-table')]//th[normalize-space()='${value}']/ancestor::div[contains(@class,'commission-rule-table')]//button[.='Save Changes']",
+		    "tertiary": "xpath=//button[normalize-space()='Save Changes' and ancestor::div[contains(@class,'commission-rule-table')][.//th[normalize-space()='${value}']]]"
+		},
+		"modalCloseButton": {
+			"primary": "xpath=//button[normalize-space()='Close']",
+			"secondary": "xpath=//button[contains(text(),'Close')]",
+			"tertiary": "xpath=//button[contains(@class,'btn')]"
+		},
+		"homeButton": {
+			"primary": "xpath=//div[contains(@class,'logo-image-container')]/following-sibling::span",
+			"secondary": "xpath=//div[contains(@class,'logo-image-container')]//following::span",
+			"tertiary": "xpath=//span[contains(@class,'logo')]"
+		}
+	}
+}

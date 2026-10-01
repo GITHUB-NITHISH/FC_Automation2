@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-24T21:47:19 IST" name="Default suite" finished-at="2026-05-24T21:51:48 IST" duration-ms="269670">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runner.CucumberTestRunner@1416ff46]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-05-24T21:47:19 IST" name="Default test" finished-at="2026-05-24T21:51:48 IST" duration-ms="269670">
+      <class name="com.automation.runner.CucumberTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.automation.runner.CucumberTestRunner@1416ff46]" started-at="2026-05-24T21:47:19 IST" name="setUpClass" finished-at="2026-05-24T21:47:21 IST" duration-ms="2198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@200591c8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setupBrowser(java.lang.String)[pri:0, instance:com.automation.runner.CucumberTestRunner@1416ff46]" started-at="2026-05-24T21:47:21 IST" name="setupBrowser" finished-at="2026-05-24T21:47:21 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runner.CucumberTestRunner@1416ff46]" started-at="2026-05-24T21:47:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-24T21:48:45 IST" duration-ms="81468" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_USR_001: Create Freightcom internal user Successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Commissions - Account Manager Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runner.CucumberTestRunner@1416ff46]" started-at="2026-05-24T21:48:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-24T21:49:18 IST" duration-ms="33247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_AM_001: Create Account Manager Successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Team & Commissions"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runner.CucumberTestRunner@1416ff46]" started-at="2026-05-24T21:49:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-24T21:49:56 IST" duration-ms="38053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_CM_001: Edit Account Manager Commission Structure Successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sales Team & Commissions"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runner.CucumberTestRunner@1416ff46]" started-at="2026-05-24T21:49:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-24T21:50:24 IST" duration-ms="27669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_AP_001: Create AP Account Successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["AP Accounts Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runner.CucumberTestRunner@1416ff46]" started-at="2026-05-24T21:50:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-24T21:50:41 IST" duration-ms="16853" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_PM_01: Create Cheque Payment Method Successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Payment Method Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runner.CucumberTestRunner@1416ff46]" started-at="2026-05-24T21:50:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-24T21:51:12 IST" duration-ms="31811" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_PY_01: Create Payee Successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Payee Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.runner.CucumberTestRunner@1416ff46]" started-at="2026-05-24T21:51:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-24T21:51:47 IST" duration-ms="34230" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_APAM_01: Update Account Manager Commission Successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account Manager Commission Module"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Failed to find element: commissionStatusButton on page: apAccountManagerPage]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Failed to find element: commissionStatusButton on page: apAccountManagerPage
+at com.automation.utils.SelfHealingLocatorUtil.findElement(SelfHealingLocatorUtil.java:300)
+at com.automation.pages.base.BasePage.getElement(BasePage.java:488)
+at com.automation.pages.web.ApAccountManagerPage.clickCommissionStatusButton(ApAccountManagerPage.java:139)
+at com.automation.steps.ApAccountManagerStepDef.user_activate_commission_status_of_the_account_manager(ApAccountManagerStepDef.java:168)
+at ✽.user activate commission status of the account manager(file:///C:/Users/NithishkumarPandian/Downloads/SeleniumBDDFramework_21_05/SeleniumBDDFramework/src/test/resources/features/06_ApAccountManager.feature:35)
+Caused by: java.lang.RuntimeException: Self-Healing failed: All strategies exhausted.
+at com.automation.utils.SelfHealingLocatorUtil.tryLocators(SelfHealingLocatorUtil.java:356)
+at com.automation.utils.SelfHealingLocatorUtil.findElement(SelfHealingLocatorUtil.java:297)
+at com.automation.pages.base.BasePage.getElement(BasePage.java:488)
+at com.automation.pages.web.ApAccountManagerPage.clickCommissionStatusButton(ApAccountManagerPage.java:139)
+at com.automation.steps.ApAccountManagerStepDef.user_activate_commission_status_of_the_account_manager(ApAccountManagerStepDef.java:168)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.automation.runner.CucumberTestRunner@1416ff46]" started-at="2026-05-24T21:51:47 IST" name="tearDownClass" finished-at="2026-05-24T21:51:48 IST" duration-ms="1668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.automation.runner.CucumberTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

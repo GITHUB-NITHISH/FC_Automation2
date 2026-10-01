@@ -1,0 +1,643 @@
+{
+	"ShipmentPayload":
+{
+ "createShipment":
+{
+	  "state": "draft",
+	  "shipment": {
+	    "name": "",
+	    "is_stallion_shipment": false,
+	    "requests_ltland_courier_rates": false,
+
+	    "shipping_details": {
+	      "expected_ship_date": {
+	        "year": 2026,
+	        "month": 6,
+	        "day": 5
+	      },
+
+	      "origin": {
+	        "searchable_id": "",
+	        "name": "DemoFreight.inc",
+	        "address": {
+	          "address_line1": "10, east street",
+	          "address_line2": "",
+	          "street_number": "",
+	          "street_name": "",
+	          "unit_number": "",
+	          "city": "Brampton",
+	          "region": "ON",
+	          "country": "CA",
+	          "postal_code": "L6P 3M3",
+	          "validated": false
+	        },
+	        "residential": false,
+	        "business_type": "commercial-business",
+	        "tailgate_required": false,
+	        "instructions": "",
+	        "contact_name": "Demo Freight",
+	        "phone_number": {
+	          "number": "9876543210",
+	          "extension": ""
+	        },
+	        "email_addresses": [
+	          "gayathiri.manikandan@kumaran.com"
+	        ],
+	        "receives_email_updates": false,
+	        "address_book_contact_id": ""
+	      },
+
+	      "destination": {
+	        "searchable_id": "",
+	        "name": "NitishKannan.INC",
+	        "address": {
+	          "address_line1": "Kennedy road,2365,unit/floor#305",
+	          "address_line2": "",
+	          "street_number": "",
+	          "street_name": "",
+	          "unit_number": "",
+	          "city": "North York",
+	          "region": "ON",
+	          "country": "CA",
+	          "postal_code": "M2H 1J9",
+	          "validated": false
+	        },
+	        "residential": false,
+	        "business_type": "commercial-business",
+	        "tailgate_required": false,
+	        "instructions": "",
+	        "contact_name": "arun Ra",
+	        "phone_number": {
+	          "number": "85478585685",
+	          "extension": ""
+	        },
+	        "email_addresses": [
+	          ""
+	        ],
+	        "receives_email_updates": false,
+	        "address_book_contact_id": "",
+	        "ready_at": {
+	          "hour": 10,
+	          "minute": 0,
+	          "populated": true
+	        },
+	        "ready_until": {
+	          "hour": 17,
+	          "minute": 0,
+	          "populated": true
+	        },
+	        "signature_requirement": "not-required",
+	        "no_safe_drop": false,
+	        "proof_of_age_nineteen": false
+	      },
+
+	      "reference_codes": [],
+	      "packaging_type": "pallet",
+
+	      "packaging_properties": {
+	        "pallet_type": "ltl",
+	        "pallets": [
+	          {
+	            "measurements": {
+	              "cuboid": {
+	                "l": 50,
+	                "w": 49,
+	                "h": 48,
+	                "unit": "in"
+	              },
+	              "weight": {
+	                "value": 47,
+	                "unit": "lb"
+	              }
+	            },
+	            "description": "DCbooks",
+	            "freight_class": "400",
+	            "nmfc": null,
+	            "contents_type": "pallet",
+	            "num_pieces": 1
+	          }
+	        ],
+	        "has_stackable_pallets": false,
+	        "dangerous_goods": "",
+	        "dangerous_goods_details": {
+	          "packaging_group": "",
+	          "goods_class": "",
+	          "united_nations_number": "",
+	          "description": "",
+	          "emergency_contact_name": "",
+	          "emergency_contact_phone_number": {
+	            "number": "",
+	            "extension": ""
+	          }
+	        },
+	        "pallet_service_details": {
+	          "limited_access_delivery_type": "",
+	          "limited_access_delivery_other_name": "",
+	          "refrigerated_service": "",
+	          "in_bond": false,
+	          "appointment_delivery": false,
+	          "protect_from_freeze": false,
+	          "threshold_pickup": false,
+	          "threshold_delivery": false,
+	          "trade_show_delivery": false,
+	          "amazon_or_fbadelivery": false
+	        }
+	      },
+
+	      "customs_data": null,
+	      "alternate_destination": {}
+	    },
+
+	    "existing_customer_document_ids": [],
+	    "new_customer_documents": [],
+	    "pickup_type": "ltl-dispatch",
+	    "saved_explicitly": false,
+	    "selected_rate_request_type": "",
+
+	    "rate_requests": [
+	      {
+	        "type": "ddu",
+	        "shipping_details": {
+	          "expected_ship_date": {
+	            "year": 2026,
+	            "month": 6,
+	            "day": 5
+	          },
+	          "origin": {
+	            "searchable_id": "",
+	            "name": "DemoFreight.inc",
+	            "address": {
+	              "address_line1": "10, east street",
+	              "address_line2": "",
+	              "street_number": "",
+	              "street_name": "",
+	              "unit_number": "",
+	              "city": "Brampton",
+	              "region": "ON",
+	              "country": "CA",
+	              "postal_code": "L6P 3M3",
+	              "validated": false
+	            },
+	            "residential": false,
+	            "business_type": "commercial-business",
+	            "tailgate_required": false,
+	            "instructions": "",
+	            "contact_name": "Demo Freight",
+	            "phone_number": {
+	              "number": "9876543210",
+	              "extension": ""
+	            },
+	            "email_addresses": [
+	              "gayathiri.manikandan@kumaran.com"
+	            ],
+	            "receives_email_updates": false,
+	            "address_book_contact_id": ""
+	          },
+	          "destination": {
+	            "searchable_id": "",
+	            "name": "NitishKannan.INC",
+	            "address": {
+	              "address_line1": "Kennedy road,2365,unit/floor#305",
+	              "address_line2": "",
+	              "street_number": "",
+	              "street_name": "",
+	              "unit_number": "",
+	              "city": "North York",
+	              "region": "ON",
+	              "country": "CA",
+	              "postal_code": "M2H 1J9",
+	              "validated": false
+	            },
+	            "residential": false,
+	            "business_type": "commercial-business",
+	            "tailgate_required": false,
+	            "instructions": "",
+	            "contact_name": "arun Ra",
+	            "phone_number": {
+	              "number": "85478585685",
+	              "extension": ""
+	            },
+	            "email_addresses": [
+	              ""
+	            ],
+	            "receives_email_updates": false,
+	            "address_book_contact_id": "",
+	            "ready_at": {
+	              "hour": 10,
+	              "minute": 0,
+	              "populated": true
+	            },
+	            "ready_until": {
+	              "hour": 17,
+	              "minute": 0,
+	              "populated": true
+	            },
+	            "signature_requirement": "not-required",
+	            "no_safe_drop": false,
+	            "proof_of_age_nineteen": false
+	          },
+	          "reference_codes": [],
+	          "packaging_type": "pallet",
+	          "packaging_properties": {
+	            "pallet_type": "ltl",
+	            "pallets": [
+	              {
+	                "measurements": {
+	                  "cuboid": {
+	                    "l": 50,
+	                    "w": 49,
+	                    "h": 48,
+	                    "unit": "in"
+	                  },
+	                  "weight": {
+	                    "value": 47,
+	                    "unit": "lb"
+	                  }
+	                },
+	                "description": "DCbooks",
+	                "freight_class": "400",
+	                "nmfc": null,
+	                "contents_type": "pallet",
+	                "num_pieces": 1
+	              }
+	            ]
+	          },
+	          "customs_data": null,
+	          "alternate_destination": {}
+	        }
+	      }
+	    ],
+
+	    "ltldispatch": {
+	      "ready_to_dispatch": true,
+	      "date": {
+	        "year": 2026,
+	        "month": 6,
+	        "day": 5
+	      },
+	      "ready_at": {
+	        "hour": 9,
+	        "minute": 0,
+	        "populated": true
+	      },
+	      "ready_until": {
+	        "hour": 17,
+	        "minute": 0,
+	        "populated": true
+	      }
+	    }
+	  },
+
+	  "order_source": ""
+	},
+   "RateRequestId":
+   {
+	"force_reset_rate_request_id":false
+ },
+    "ShipmentUpdate":
+	{
+	  "shipment": {
+	    "name": "",
+	    "is_stallion_shipment": false,
+	    "has_selected_rate_before": true,
+	    "requests_ltland_courier_rates": false,
+
+	    "shipping_details": {
+	      "expected_ship_date": {
+	        "year": 2026,
+	        "month": 6,
+	        "day": 5
+	      },
+
+	      "origin": {
+	        "searchable_id": "",
+	        "name": "DemoFreight.inc",
+	        "address": {
+	          "address_line1": "10, east street",
+	          "address_line2": "",
+	          "unit_number": "",
+	          "city": "Brampton",
+	          "region": "ON",
+	          "country": "CA",
+	          "postal_code": "L6P 3M3",
+	          "validated": false
+	        },
+	        "residential": false,
+	        "business_type": "commercial-business",
+	        "tailgate_required": false,
+	        "instructions": "",
+	        "contact_name": "Demo Freight",
+	        "phone_number": {
+	          "number": "9876543210",
+	          "extension": ""
+	        },
+	        "email_addresses": [
+	          "gayathiri.manikandan@kumaran.com"
+	        ],
+	        "receives_email_updates": false,
+	        "address_book_contact_id": ""
+	      },
+
+	      "destination": {
+	        "searchable_id": "",
+	        "name": "NitishKannan.INC",
+	        "address": {
+	          "address_line1": "Kennedy road,2365,unit/floor#305",
+	          "address_line2": "",
+	          "unit_number": "",
+	          "city": "North York",
+	          "region": "ON",
+	          "country": "CA",
+	          "postal_code": "M2H 1J9",
+	          "validated": false
+	        },
+	        "residential": false,
+	        "business_type": "commercial-business",
+	        "tailgate_required": false,
+	        "instructions": "",
+	        "contact_name": "arun Ra",
+	        "phone_number": {
+	          "number": "85478585685",
+	          "extension": ""
+	        },
+	        "email_addresses": [
+	          ""
+	        ],
+	        "receives_email_updates": false,
+	        "address_book_contact_id": "",
+	        "ready_at": {
+	          "hour": 10,
+	          "minute": 0,
+	          "populated": true
+	        },
+	        "ready_until": {
+	          "hour": 17,
+	          "minute": 0,
+	          "populated": true
+	        },
+	        "signature_requirement": "not-required",
+	        "no_safe_drop": false,
+	        "proof_of_age_nineteen": false
+	      },
+
+	      "reference_codes": [],
+	      "packaging_type": "pallet",
+
+	      "packaging_properties": {
+	        "pallet_type": "ltl",
+	        "pallets": [
+	          {
+	            "measurements": {
+	              "cuboid": {
+	                "l": 50,
+	                "w": 49,
+	                "h": 48,
+	                "unit": "in"
+	              },
+	              "weight": {
+	                "value": 47,
+	                "unit": "lb"
+	              }
+	            },
+	            "description": "DCbooks",
+	            "freight_class": "400",
+	            "nmfc": "",
+	            "contents_type": "pallet",
+	            "num_pieces": 1,
+	            "stackable": false,
+	            "standard_size": false
+	          }
+	        ],
+	        "has_stackable_pallets": false,
+	        "dangerous_goods": "",
+	        "dangerous_goods_details": {
+	          "packaging_group": "",
+	          "goods_class": "",
+	          "united_nations_number": "",
+	          "description": "",
+	          "emergency_contact_name": "",
+	          "emergency_contact_phone_number": {
+	            "number": "",
+	            "extension": ""
+	          }
+	        },
+	        "pallet_service_details": {
+	          "limited_access_delivery_type": "",
+	          "limited_access_delivery_other_name": "",
+	          "refrigerated_service": "",
+	          "in_bond": false,
+	          "appointment_delivery": false,
+	          "protect_from_freeze": false,
+	          "threshold_pickup": false,
+	          "threshold_delivery": false,
+	          "trade_show_delivery": false,
+	          "amazon_or_fbadelivery": false
+	        }
+	      },
+
+	      "customs_data": null,
+	      "alternate_destination": {
+	        "name": "",
+	        "address": {
+	          "address_line1": "",
+	          "address_line2": "",
+	          "unit_number": "",
+	          "city": "",
+	          "region": "",
+	          "country": "",
+	          "postal_code": "",
+	          "validated": false
+	        }
+	      }
+	    },
+
+	    "existing_customer_document_ids": [],
+	    "new_customer_documents": [],
+	    "pickup_type": "ltl-dispatch",
+	    "saved_explicitly": false,
+	    "selected_rate_request_type": "",
+
+	    "rate_requests": [
+	      {
+	        "type": "ddu",
+	        "shipping_details": {
+	          "expected_ship_date": {
+	            "year": 2026,
+	            "month": 6,
+	            "day": 5
+	          },
+	          "origin": {
+	            "searchable_id": "",
+	            "name": "DemoFreight.inc",
+	            "address": {
+	              "address_line1": "10, east street",
+	              "address_line2": "",
+	              "unit_number": "",
+	              "city": "Brampton",
+	              "region": "ON",
+	              "country": "CA",
+	              "postal_code": "L6P 3M3",
+	              "validated": false
+	            },
+	            "residential": false,
+	            "business_type": "commercial-business",
+	            "tailgate_required": false,
+	            "instructions": "",
+	            "contact_name": "Demo Freight",
+	            "phone_number": {
+	              "number": "9876543210",
+	              "extension": ""
+	            },
+	            "email_addresses": [
+	              "gayathiri.manikandan@kumaran.com"
+	            ],
+	            "receives_email_updates": false,
+	            "address_book_contact_id": ""
+	          },
+	          "destination": {
+	            "searchable_id": "",
+	            "name": "NitishKannan.INC",
+	            "address": {
+	              "address_line1": "Kennedy road,2365,unit/floor#305",
+	              "address_line2": "",
+	              "unit_number": "",
+	              "city": "North York",
+	              "region": "ON",
+	              "country": "CA",
+	              "postal_code": "M2H 1J9",
+	              "validated": false
+	            },
+	            "residential": false,
+	            "business_type": "commercial-business",
+	            "tailgate_required": false,
+	            "instructions": "",
+	            "contact_name": "arun Ra",
+	            "phone_number": {
+	              "number": "85478585685",
+	              "extension": ""
+	            },
+	            "email_addresses": [
+	              ""
+	            ],
+	            "receives_email_updates": false,
+	            "address_book_contact_id": "",
+	            "ready_at": {
+	              "hour": 10,
+	              "minute": 0,
+	              "populated": true
+	            },
+	            "ready_until": {
+	              "hour": 17,
+	              "minute": 0,
+	              "populated": true
+	            },
+	            "signature_requirement": "not-required",
+	            "no_safe_drop": false,
+	            "proof_of_age_nineteen": false
+	          },
+
+	          "reference_codes": [],
+	          "packaging_type": "pallet",
+
+	          "packaging_properties": {
+	            "pallet_type": "ltl",
+	            "pallets": [
+	              {
+	                "measurements": {
+	                  "cuboid": {
+	                    "l": 50,
+	                    "w": 49,
+	                    "h": 48,
+	                    "unit": "in"
+	                  },
+	                  "weight": {
+	                    "value": 47,
+	                    "unit": "lb"
+	                  }
+	                },
+	                "description": "DCbooks",
+	                "freight_class": "400",
+	                "nmfc": "",
+	                "contents_type": "pallet",
+	                "num_pieces": 1,
+	                "stackable": false,
+	                "standard_size": false
+	              }
+	            ],
+	            "has_stackable_pallets": false,
+	            "dangerous_goods": "",
+	            "dangerous_goods_details": {
+	              "packaging_group": "",
+	              "goods_class": "",
+	              "united_nations_number": "",
+	              "description": "",
+	              "emergency_contact_name": "",
+	              "emergency_contact_phone_number": {
+	                "number": "",
+	                "extension": ""
+	              }
+	            },
+	            "pallet_service_details": {
+	              "limited_access_delivery_type": "",
+	              "limited_access_delivery_other_name": "",
+	              "refrigerated_service": "",
+	              "in_bond": false,
+	              "appointment_delivery": false,
+	              "protect_from_freeze": false,
+	              "threshold_pickup": false,
+	              "threshold_delivery": false,
+	              "trade_show_delivery": false,
+	              "amazon_or_fbadelivery": false
+	            }
+	          },
+
+	          "customs_data": null,
+	          "alternate_destination": {
+	            "name": "",
+	            "address": {
+	              "address_line1": "",
+	              "address_line2": "",
+	              "unit_number": "",
+	              "city": "",
+	              "region": "",
+	              "country": "",
+	              "postal_code": "",
+	              "validated": false
+	            }
+	          }
+	        }
+	      }
+	    ],
+
+	    "ltldispatch": {
+	      "ready_to_dispatch": true,
+	      "date": {
+	        "year": 2026,
+	        "month": 6,
+	        "day": 5
+	      },
+	      "ready_at": {
+	        "hour": 9,
+	        "minute": 0,
+	        "populated": true
+	      },
+	      "ready_until": {
+	        "hour": 17,
+	        "minute": 0,
+	        "populated": true
+	      }
+	    },
+
+	    "carrier_id": "apex",
+	    "service_id": "standard"
+	  }
+	},
+	"BookShipment":
+
+	{
+	  "payment_method_id": "r1TTTYDQGF8getX9lbej8q5kmE4CBNGM",
+	  "customs_and_duties_payment_method_id": "",
+	  "billing_currency_code": ""
+	}
+  }	
+}

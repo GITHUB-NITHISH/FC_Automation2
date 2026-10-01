@@ -1,0 +1,122 @@
+{
+	"searchCommissionsHeader": {
+		"primary": "xpath=//h4[normalize-space()='Search Commissions']",
+		"secondary": "xpath=//div[contains(@class,'row') and contains(@class,'mb-3')]//h4[normalize-space()='Search Commissions']",
+		"tertiary": "xpath=//h4[@class='m-0' and normalize-space()='Search Commissions']"
+	},
+	"dueRadioButton": {
+		"primary": "xpath=//label[@for='due']",
+		"secondary": "xpath=//label[@for='due' and contains(@class,'custom-control-label')]",
+		"tertiary": "xpath=//label[@for='due']/preceding-sibling::input"
+	},
+	"calendarButton": {
+		"primary": "xpath=//div[@class='input-group-prepend' and @role='button']",
+		"secondary": "xpath=//div[@class='input-group-prepend']",
+		"tertiary": "xpath=//div[@role='button' and contains(@class,'input-group-prepend')]"
+	},
+	"calendarMonth": {
+		"primary": "xpath=//select[@title='Select month']",
+		"secondary": "xpath=//select[@title='Select month' and @aria-label='Select month']",
+		"tertiary": "xpath=//select[contains(@class,'custom-select') and contains(@title,'month')]"
+	},
+	"calendarYear": {
+		"primary": "xpath=//select[@title='Select year']",
+		"secondary": "xpath=//select[@title='Select year' and @aria-label='Select year']",
+		"tertiary": "xpath=//select[contains(@class,'custom-select') and contains(@title,'year')]"
+	},
+	"calendarDate": {
+		"primary": "xpath=//div[contains(@class,'ngb-dp-day')]//span[contains(@class,'custom-day') and normalize-space()='${value}']",
+		"secondary": "xpath=//span[contains(@class,'custom-day') and normalize-space()='${value}']",
+		"tertiary": "xpath=//span[contains(@class,'custom-day') and normalize-space()='${value}']"
+	},
+	"customerNameField": {
+		"primary": "xpath=//div[contains(normalize-space(),'${value}')]/ancestor::tr//td[contains(@class,'text-nowrap') and not(.//div)]",
+		"secondary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//td[not(.//div) and contains(@class,'text-nowrap')]",
+		"tertiary": "xpath=//div[contains(normalize-space(),'${value}')]/ancestor::tr/td[not(descendant::div)]"
+	},
+	"searchByTransactionField": {
+		"primary": "xpath=//label[normalize-space()='Search by Transaction/BOL/Tracking #']/following-sibling::input",
+		"secondary": "xpath=//label[normalize-space()='Search by Transaction/BOL/Tracking #']/parent::div//input[contains(@class,'form-control')]",
+		"tertiary": "xpath=//div[contains(@class,'col')][.//label[contains(.,'Transaction')]]//input[contains(@class,'form-control')]"
+	},
+	"searchButton": {
+		"primary": "xpath=//button[normalize-space()='Search']",
+		"secondary": "xpath=//button[contains(.,'Search')]",
+		"tertiary": "xpath=//button[@type='submit']"
+	},
+	"transactionId": {
+		"primary": "xpath=//td[contains(@class,'text-nowrap')]//div[contains(text(),'${value}')]",
+		"secondary": "xpath=//td[contains(@class,'text-nowrap') and contains(text(),' ${value}')]",
+		"tertiary": "xpath=//tr[.//td[contains(normalize-space(),'${value}')]]//td[contains(@class,'text-nowrap')] "
+	},
+	"totalChargesField": {
+		"primary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]//following-sibling::td[count(//th[contains(normalize-space(),'Charges')]/preceding-sibling::th)]//strong",
+		"secondary": "xpath//tr[.//div[contains(normalize-space(),'${value}')]]//div[contains(normalize-space(),'Total')]//strong",
+		"tertiary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//td[contains(@class,'text-nowrap')]//strong"
+	},
+	"netRevenueValueField": {
+		"primary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]//following-sibling::td[count(//th[contains(normalize-space(),'Charges')]/preceding-sibling::th)]//div[contains(text(),'Net Rev')]",
+		"secondary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//div[contains(normalize-space(),'Net Rev')]",
+		"tertiary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//td[contains(@class,'text-nowrap')]//div[contains(.,'Net Rev')]"
+	},
+	"opsCostValueField": {
+		"primary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]//following-sibling::td[count(//th[contains(normalize-space(),'Charges')]/preceding-sibling::th)]//div[contains(@class,'text-muted')]",
+		"secondary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//div[contains(@class,'text-muted')]",
+		"tertiary": "xpath=//div[contains(normalize-space(),'Ops Cost')]/span"
+	},
+	"commissionsTypeField": {
+		"primary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]//following-sibling::td[count(//th[contains(normalize-space(),'Commission Type')]/preceding-sibling::th)]//div[translate(., '0123456789', '') != .]",
+		"secondary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//td[contains(@class,'text-nowrap')]//div[contains(.,'%') or contains(.,'Fee')]",
+		"tertiary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//td[contains(@class,'text-nowrap')]//div[contains(.,'%') or contains(.,'Fee')]"
+	},
+	"shipmentTypeField": {
+		"primary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]//following-sibling::td[count(//th[contains(normalize-space(),'Commission Type')]/preceding-sibling::th)]//div[translate(., '0123456789', '') = .]",
+		"secondary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//td[contains(@class,'text-nowrap')]//div[normalize-space()='LTL']",
+		"tertiary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//div[string-length(normalize-space()) <= 5]"
+	},
+	"commissionableAmountField": {
+		"primary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]//following-sibling::td[count(//th[contains(normalize-space(),'Commissionable Amount')]/preceding-sibling::th)]",
+		"secondary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//td[contains(@class,'font-weight-bold')]",
+		"tertiary": "xpath=//td[contains(@class,'font-weight-bold')]"
+	},
+	"totalCommissionValueField": {
+		"primary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]//following-sibling::td[count(//th[contains(normalize-space(),'Total Commission')]/preceding-sibling::th)]",
+		"secondary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//td[contains(@class,'font-weight-bold')][last()]",
+		"tertiary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//td[contains(@class,'font-weight-bold')][position()>1]"
+	},
+	"agentNameField": {
+		"primary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//following-sibling::td//div[contains(.,'Agent Name')]",
+		"secondary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//div[contains(.,'Agent Name')]",
+		"tertiary": "xpath=//div[contains(text(),'Agent Name')]"
+	},
+	"commTotalValueField": {
+		"primary": "xpath=//tr[td[contains(normalize-space(),'${value}')]]//td[last()]//span",
+		"secondary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]/following-sibling::td[count(//th[contains(normalize-space(),'Account Manager')]/preceding-sibling::th)]//span",
+		"tertiary": "xpath=//td//div[contains(.,'Comm. Total')]//span"
+	},
+	"grossProfitField": {
+		"primary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]/following-sibling::td[count(//th[contains(normalize-space(),'Gross Profit')]/preceding-sibling::th)]",
+		"secondary": "xpath= //tr[td//div[contains(.,'${value}')]]/td[count(//th[.//span[normalize-space()='Gross Profit']]/preceding-sibling::th) + 1 ]",
+		"tertiary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//td[normalize-space()='${value}']"
+	},
+	"bolNumberField": {
+		"primary": "xpath=//div[contains(text(),'${value}')]/following-sibling::div[contains(text(),'BOL')]",
+		"secondary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//div[contains(normalize-space(),'BOL')]",
+		"tertiary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]//div[contains(.,'BOL')]"
+	},
+	"invNumberField": {
+		"primary": "xpath=//div[contains(text(),'${value}')]/following-sibling::div[contains(text(),'Inv')]",
+		"secondary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//div[contains(normalize-space(),'Inv')]",
+		"tertiary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]//div[contains(.,'Inv')]"
+	},
+	"shipmentDateField": {
+		"primary": "xpath= //div[contains(text(),'${value}')]/following-sibling::div[not(contains(text(),'BOL')) and not(contains(text(),'Inv')) and not(contains(text(),'Transaction')) and not(contains(text(),'Tracking'))]",
+		"secondary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//td[contains(@class,'text-nowrap')]//div[last()]",
+		"tertiary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]//div[last()]"
+	},
+	"flatFeeField": {
+		"primary": "xpath=//td[.//div[contains(normalize-space(),'${value}')]]//following-sibling::td[count(//th[contains(normalize-space(),'Commission Type')]/preceding-sibling::th)]//div[contains(text(),'Flat Fee')]",
+		"secondary": "xpath=//tr[.//div[contains(normalize-space(),'${value}')]]//div[contains(.,'Flat Fee')]",
+		"tertiary": "xpath=//div[contains(text(),'Flat Fee')]"
+	}
+}

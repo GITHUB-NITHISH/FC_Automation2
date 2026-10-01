@@ -1,0 +1,52 @@
+{
+	"apDashboardPage": {
+		"dashboardHeader": {
+			"primary": "xpath=//h1[normalize-space()='A/P Dashboard']",
+			"secondary": "css=h1[_ngcontent-cwx-c150]",
+			"tertiary": "xpath=//div[contains(@class,'main-heading-with-actions')]//h1"
+		},
+		"apAccountTile": {
+			"primary": "xpath=//a[contains(@href,'accounts') and normalize-space()='A/P Accounts']",
+			"secondary": "xpath=//a[contains(@href,'accounts')]",
+			"tertiary": "xpath=//a[contains(text(),'Accounts')]"
+		},
+		"createPayableTile": {
+			"primary": "xpath=//a[@href='ap/admin/create-new-payable' and normalize-space()='Create New Payable']",
+			"secondary": "xpath=//a[contains(@href,'create-new-payable')]",
+			"tertiary": "xpath=//a[contains(text(),'Create New Payable')]"
+		},
+		"paymentMethodTile": {
+			"primary": "xpath=//a[contains(@href, 'payment-methods') and .//span[normalize-space()='Payment Methods']]",
+			"secondary": "css=a[href*='payment-methods']",
+			"tertiary": "xpath=//span[normalize-space()='Payment Methods']"
+		},
+		"payeesTile": {
+		  "primary": "xpath=//a[contains(@href, 'payees') and .//span[normalize-space()='Payees']]",
+		  "secondary": "css=a[href*='payees']",
+		  "tertiary": "xpath=//span[normalize-space()='Payees']"
+		},
+		"commissionsTile": {
+		  "primary": "xpath=//div[contains(@Class,'tile-content')]//following-sibling::div[normalize-space()='Commissions']",
+		  "secondary": "xpath=//div[normalize-space()='Commissions']",
+		  "tertiary": "css=div.tile-content"
+		},
+		"commissionsDropdownButton": {
+		  "primary": "xpath=//button[normalize-space()='Commissions']",
+		  "secondary": "css=button.dropdown-toggle",
+		  "tertiary": "xpath=//button[contains(text(),'Commissions')]"
+		},
+		"accountManagerOption": {
+		  "primary": "xpath=//span[normalize-space()='Account Manager']",
+		  "secondary": "css=span",
+		  "tertiary": "xpath=//span[contains(text(),'Account Manager')]"
+		},
+		"accountManagerSearch": {
+		  "primary": "xpath=//label[normalize-space()='Account Manager']//following-sibling::app-searchable-multi-select//button[@class='dropdown-toggle custom-select']",
+		  "secondary": "css=button.dropdown-toggle.custom-select",
+		  "tertiary": "xpath=//label[contains(text(),'Account Manager')]//following::button[contains(@class,'dropdown-toggle')]"
+		},
+		"apSearchCommisions":{
+			"primary": "xpath=//span[normalize-space()='Search Commissions']"
+		}
+	}
+}

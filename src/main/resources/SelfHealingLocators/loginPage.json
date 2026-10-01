@@ -1,0 +1,19 @@
+{
+	"loginPage": {
+		"usernameField": {
+			"primary": "xpath=//input[@id='loginIDInput']",
+			"secondary": "css=input#loginIDInput",
+			"tertiary": "xpath=//label[text()='Username']/following::input[1]"
+		},
+		"passwordField": {
+			"primary": "xpath=//input[@id='passwordInput']",
+			"secondary": "css=input#passwordInput",
+			"tertiary": "xpath=//input[@type='password' and @formcontrolname='password']"
+		},
+		"loginButton": {
+			"primary": "xpath=//button[text()='Login']",
+			"secondary": "css=button.btn.btn-primary.btn-block",
+			"tertiary": "xpath=//button[@type='submit' and contains(@class,'btn-primary')]"
+		}
+	}
+}

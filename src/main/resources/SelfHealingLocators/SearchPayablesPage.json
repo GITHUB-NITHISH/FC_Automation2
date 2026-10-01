@@ -1,0 +1,159 @@
+{
+	"searchPayablesTile": {
+		"primary": "xpath=//a[contains(@href,'search-payable') and .//span[normalize-space()='Search Payables']]",
+		"secondary": "css=a[href*='search-payable'] span",
+		"tertiary": "xpath=//span[normalize-space()='Search Payables']/ancestor::a"
+	},
+	"clearFiltersButton": {
+		"primary": "xpath=//button[normalize-space()='Clear Filters']",
+		"secondary": "css=button.link-button-secondary",
+		"tertiary": "xpath=//button[contains(text(),'Clear')]"
+	},
+	"resultsTable": {
+		"primary": "xpath=//table//tbody/tr",
+		"secondary": "css=table tbody tr",
+		"tertiary": "xpath=//tbody/tr"
+	},
+	"calendarButton": {
+		"primary": "xpath=//div[@class='input-group-prepend' and @role='button']",
+		"secondary": "xpath=//div[@class='input-group-prepend']",
+		"tertiary": "xpath=//div[@role='button' and contains(@class,'input-group-prepend')]"
+	},
+	"calendarMonth": {
+		"primary": "xpath=//select[@title='Select month']",
+		"secondary": "xpath=//select[@title='Select month' and @aria-label='Select month']",
+		"tertiary": "xpath=//select[contains(@class,'custom-select') and contains(@title,'month')]"
+	},
+	"calendarYear": {
+		"primary": "xpath=//select[@title='Select year']",
+		"secondary": "xpath=//select[@title='Select year' and @aria-label='Select year']",
+		"tertiary": "xpath=//select[contains(@class,'custom-select') and contains(@title,'year')]"
+	},
+	"calendarDate": {
+		"primary": "xpath=//div[contains(@class,'ngb-dp-day')]//span[contains(@class,'custom-day') and normalize-space()='${value}']",
+		"secondary": "xpath=//span[contains(@class,'custom-day') and normalize-space()='${value}']",
+		"tertiary": "xpath=//span[contains(@class,'custom-day') and normalize-space()='${value}']"
+	},
+	"payeeNameDropdown": {
+		"primary": "xpath=//label[normalize-space()='Payee Name']/parent::div//button",
+		"secondary": "css= button.dropdown-toggle.custom-select",
+		"teritary": "xpath=//span[normalize-space()='Select']/ancestor::button"
+	},
+	"payeeNameSearchField": {
+		"primary": "xpath=//label[normalize-space()='Payee Name']/parent::div//input[@name='searchText']",
+		"secondary": "css=.dropdown-search input[placeholder='Search']",
+		"tertitary": "xpath=//div[contains(@class,'dropdown-search')]//input[@placeholder='Search']"
+	},
+	"payeeNameDropdownOptions": {
+		"primary": "xpath=//label[normalize-space()='${value}']",
+		"secondary": "css=.dropdown-checkboxes label.custom-control-label",
+		"tertitary": "xpath=//div[contains(@class,'dropdown-checkboxes')]//label[normalize-space()='${value}']"
+	},
+	"searchButton": {
+		"primary": "xpath=//button[normalize-space()='Search']",
+		"secondary": "css=button.btn-primary",
+		"tertiary": "xpath=//button[contains(@class,'btn-primary') and contains(normalize-space(),'Search')]"
+	},
+	"printChequeButton": {
+		"primary": "xpath=//button[normalize-space()='Print Cheques']",
+		"secondary": "css=.bulk-actions button.btn-primary",
+		"tertitary": "xpath=//div[contains(@class,'bulk-actions')]//button[normalize-space()='${value}']"
+	},
+	"printChequesHeader": {
+		"primary": "xpath=//h2[contains(normalize-space(),'Print Cheques')]",
+		"secondary": "css=h2.main-heading.my-3",
+		"tertitary": "xpath=//h2[contains(@class,'main-heading') and normalize-space()='Print Cheques']"
+	},
+	"closeOffAndPrintButton": {
+		"primary": "xpath=//app-cheque-list//button[contains(text(),'Close Off')]",
+		"secondary": "css=app-cheque-list > button.btn-primary",
+		"tertitary": "xpath=//app-cheque-list/div/following-sibling::button[normalize-space()='Close Off & Print']"
+	},
+	"chequeField": {
+		"primary": "xpath=//input[contains(@placeholder,'cheque')]",
+		"secondary": "css=app-close-off-list input[placeholder='Enter cheque #']",
+		"tertitary": "xpath=//tr[.//td[normalize-space()='${value}']]//input[@placeholder='Enter cheque #']"
+	},
+	"paymentDateField": {
+		"primary": "xpath=//div[contains(@class,'date-picker-group')]//input",
+		"secondary": "css=app-close-off-list input[ngbdatepicker]",
+		"tertitary": "xpath=/tr[.//td[normalize-space()='${value}']]//input[contains(@class,'form-control') and not(@placeholder)]"
+	},
+	"generateChequeButton": {
+		"primary": "xpath=//app-close-off-list//button[normalize-space()='Generate Cheques']",
+		"secondary": "css=app-close-off-list .row.mt-3 button",
+		"tertitary": "xpath=//button[normalize-space()='Generate Cheques']"
+	},
+	"isUnpaidStatusDisplayed": {
+		"primary": "xpath=//app-payable-list//tbody//tr[1]//span[normalize-space()='Unpaid']",
+		"secondary": "css=td.value-display span.value-value",
+		"tertitary": "xpath=//tr[.//div[normalize-space()='Commission Report 11']]//span[normalize-space()='Unpaid']"
+	},
+	"resultPayee": {
+		"primary": "xpath= //div[normalize-space()='${value}']/ancestor::tr //td[count(//th[normalize-space()='Payee Name']/preceding-sibling::th)+1] //span[not(contains(@class,'sr-only'))]",
+		"secondary": "xpath=/tr[.//div[normalize-space()='${value}']]//td//span[@class='font-weight-bold align-content-center']",
+		"teritary": "xpath=//tr[.//div[normalize-space()='${value}']]//span[contains(@class,'font-weight-bold')]"
+	},
+	"resultInvoice": {
+		"primary": "xpath=//tr[.//div[normalize-space()='${value}']]//td[count(//th[normalize-space()='Invoice #']/preceding-sibling::th)+1]",
+		"secondary": "xpath=//tr[.//div[normalize-space()='${value}']]//td//div[string-length(normalize-space()) > 0]",
+		"teritary": "xpath=//div[normalize-space()='${value}']"
+	},
+	"resultStatus": {
+		"primary": "xpath=//tr[td//div[normalize-space()='${value}']] /td[count(//th[normalize-space()='Payable Status']/preceding-sibling::th)+1]"
+	},
+	"resultInvDate": {
+		"primary": "xpath=//tr[td//div[normalize-space()='${value}']] /td[count(//th[normalize-space()='Inv. Date']/preceding-sibling::th)+1]",
+		"secondary": "xpath=//tr[.//div[normalize-space()='${value}']]//td[.//div[normalize-space()='${value}']]/following-sibling::td/div",
+		"teritary": "xpath=//tr[.//div[normalize-space()='${value}']]//div[normalize-space()='${value}']"
+	},
+	"resultPaymentDate": {
+		"primary": "xpath=//tr[td//div[normalize-space()='${value}']] /td[count(//th[normalize-space()='Payment Date']/preceding-sibling::th)+1]",
+		"secondary": "xpath=//tr[.//div[normalize-space()='${value}']]//td[.//div[normalize-space()='${value}']]/following-sibling::td/following-sibling::td/div",
+		"teritary": "xpath=//tr[.//div[normalize-space()='${value}']]//div[normalize-space()='${value}']"
+	},
+	"resultAmount": {
+		"primary": "xpath=//tr[td//div[normalize-space()='${value}']] /td[count(//th[normalize-space()='Invoice Amounts']/preceding-sibling::th)+1]//div[1]/span",
+		"secondary": "xpath=//tr[.//div[normalize-space()='${value}']]//td[contains(@class,'value-display')]//span",
+		"teritary": "xpath=//tr[.//div[normalize-space()='${value}']]//td[contains(@class,'value-display')]//span[contains(text(),'$')]"
+	},
+	"resultTotal": {
+		"primary": "xpath=//tr[td//div[normalize-space()='${value}']] /td[count(//th[normalize-space()='Payment Total']/preceding-sibling::th)+1]",
+		"secondary": "xpath=//tr[.//div[normalize-space()='${value}']]//td[contains(normalize-space(),'$') and not(.//span[contains(@class,'value-label')])]",
+		"teritary": "xpath=//tr[.//div[normalize-space()='${value}']]//td[not(.//span[contains(@class,'value-label')]) and contains(text(),'$')]"
+	},
+	"resultMethod": {
+		"primary": "xpath=//tr[td//div[normalize-space()='${value}']] /td[count(//th[normalize-space()='Payment Method']/preceding-sibling::th)+1]",
+		"secondary": "xpath=//tr[.//div[normalize-space()='${value}']]//span[contains(normalize-space(),'${value}')]",
+		"teritary": "xpath=//tr[.//div[normalize-space()='${value}']]//span[normalize-space()='${value}']"
+	},
+	"payableCheckbox": {
+		"primary": "xpath= //tr[td//span[normalize-space()='${value}']]//div[contains(@class,'custom-checkbox')]//label",
+		"secondary": "xpath=//span[normalize-space()='${value}']/ancestor::td//label",
+		"tertiary": "css=label.custom-control-label"
+	},
+	"resultTax": {
+		"primary": "xpath=//tr[.//div[normalize-space()='${value}']]//td[count(//th[normalize-space()='Invoice Amounts']/preceding-sibling::th)+1]//div/span[@class='value-label' and normalize-space()='NO-TAX']",
+		"secondary": "css=span[class='value-label']",
+		"teritary": "xpath=//tr[.//div[normalize-space()='${value}']]//span[contains(@class,'value-label')]"
+	},
+	"payableCheckboxByInvoice": {
+		"primary": "xpath=//td[.//div[normalize-space()='${value}']]//preceding-sibling::td//label[contains(@for,'checkbox')]"
+	},
+	"noTaxLabel": {
+		"primary": "xpath=//span[normalize-space()='NO-TAX']"
+	},
+	"downloadChequesButton": {
+		"primary": "xpath=//button[normalize-space()='Download Cheques']",
+		"secondary": "css=btn m-1 btn-supporting",
+		"teritary": "xpath=//button[contains(@class,'btn-supporting') and normalize-space()='Download Cheques']"
+	},
+	"pdfViewer": {
+		"primary": "xpath=//embed[@id='pdf-embed']"
+	},
+	"generateChequeSuccessMessage": {
+		"primary": "xpath=//div[contains(@class,'modal-body') and contains(.,'Cheque numbers generated successfully')]",
+		"secondary": "css=div[class='modal-section-highlighted']",
+		"teritary": "xpath=//div[@class='modal-section-highlighted' and normalize-space()='Cheque numbers generated successfully.']"
+	}
+}

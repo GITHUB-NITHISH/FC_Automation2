@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="info">
+    <appenders>
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} : %msg%n"/>        
+		</Console>
+
+        <!-- File Appender for all logs -->
+        <File name="File" fileName="./logs/automation.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} : %msg%n"/>
+        </File>
+
+        <!-- File Appender for error logs -->
+        <File name="ErrorFile" fileName="./logs/error.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} : %msg%n"/>
+            <Filters>
+                <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </File>
+
+        <!-- Rolling File Appender -->
+        <RollingFile name="RollingFile" fileName="./logs/rolling.log" 
+                     filePattern="./logs/rolling-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} : %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+    </appenders>
+
+    <loggers>
+    
+      <!-- ✅  Suppress TestNG logs -->
+        <logger name="org.testng" level="error" additivity="false">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="File"/>
+        </logger>
+    
+        <!-- Logger for automation package -->
+        <logger name="com.automation" level="debug" additivity="false">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="File"/>
+            <appender-ref ref="RollingFile"/>
+        </logger>
+
+        <!-- Logger for Selenium -->
+        <logger name="org.openqa.selenium" level="warn" additivity="false">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="File"/>
+        </logger>
+
+        <!-- Root logger -->
+        <root level="info">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="File"/>
+            <appender-ref ref="ErrorFile"/>
+        </root>
+    </loggers>
+</configuration>

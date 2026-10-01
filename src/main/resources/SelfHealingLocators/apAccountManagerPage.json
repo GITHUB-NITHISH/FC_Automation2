@@ -1,0 +1,209 @@
+{
+	"apAccountManagerPage": {
+		"commissionsTile": {
+			"primary": "xpath=//div[contains(@Class,'tile-content')]//following-sibling::div[normalize-space()='Commissions']",
+			"secondary": "xpath=//div[normalize-space()='Commissions']",
+			"tertiary": "css=div.tile-content"
+		},
+		"commissionsDropdownButton": {
+			"primary": "xpath=//button[normalize-space()='Commissions']",
+			"secondary": "css=button.dropdown-toggle",
+			"tertiary": "xpath=//button[contains(text(),'Commissions')]"
+		},
+		"accountManagerOption": {
+			"primary": "xpath=//span[normalize-space()='Account Manager']",
+			"secondary": "css=span",
+			"tertiary": "xpath=//span[contains(text(),'Account Manager')]"
+		},
+		"accountManagerHeader": {
+			"primary": "xpath=//h1[contains(normalize-space(),'Account Managers')]",
+			"secondary": "xpath=//h1[contains(text(),'Account Managers')]",
+			"tertiary": "xpath=//div[contains(@class,'main-heading-with-actions')]//h1"
+		},
+		"accountManagerSearch": {
+			"primary": "xpath=//label[normalize-space()='Account Manager']//following-sibling::app-searchable-multi-select//button[@class='dropdown-toggle custom-select']",
+			"secondary": "css=button.dropdown-toggle.custom-select",
+			"tertiary": "xpath=//label[contains(text(),'Account Manager')]//following::button[contains(@class,'dropdown-toggle')]"
+		},
+		"emailAddressField": {
+			"primary": "xpath=//label[normalize-space()='Email Address']//following::input[@type='email']",
+			"secondary": "css=input[type='email']",
+			"tertiary": "xpath=//input[contains(@type,'email')]"
+		},
+		"emailAddressvalidation": {
+			"primary": "xpath=//td[normalize-space()='${value}']",
+			"secondary": "css=input[type='email']",
+			"tertiary": "xpath=//input[contains(@type,'email')]"
+		},
+		"accountManagerSearchfield": {
+			"primary": "xpath=//input[@class='form-control ng-valid ng-dirty ng-touched']",
+			"secondary": "xpath=//input[@id='searchText-OyxnWUTp']",
+			"tertiary": "css=input[placeholder='Search']"
+		},
+		"accountManagerDropdownOption": {
+			"primary": "xpath=//label[.//strong[normalize-space()='${value}']]",
+			"secondary": "xpath=//label[normalize-space()='${value}']",
+			"tertiary": "css=label"
+		},
+		"searchButton": {
+			"primary": "xpath=//app-search-account-managers//button[normalize-space()='Search']",
+			"secondary": "css=button[type='submit']",
+			"tertiary": "xpath=//button[contains(text(),'Search')]"
+		},
+		"editButton": {
+			"primary": "xpath=//tr[contains(@class,'table-tr-wrapper')][.//div[normalize-space()='${value}']]//button[contains(@class,'link-button-primary')]",
+			"secondary": "xpath=//button[contains(@class,'link-button-primary')]",
+			"tertiary": "css=button.link-button-primary"
+		},
+		"linkedPayeeDropdown": {
+			"primary": "xpath=//label[normalize-space()='Linked Payee']/following-sibling::*//button[contains(@class,'align-items-center')]",
+			"secondary": "css=button.align-items-center",
+			"tertiary": "xpath=//label[contains(text(),'Linked Payee')]//following::button"
+		},
+		"linkedPayeeDropdownValue": {
+			"primary": "xpath=//div[contains(@class,'dropdown-menu') and contains(@class,'show')]//input[@placeholder='Search ...']",
+			"secondary": "xpath=//button[@ngbdropdowntoggle and contains(@class,'single-select-btn')]",
+			"tertiary": "css=button.single-select-btn.custom-select"
+		},
+		"linkedPayeeSelectOption": {
+			"primary": "xpath=//div[@class='dropdown-options limit-height']//button[normalize-space()='${value}']",
+			"secondary": "xpath=//button[normalize-space()='${value}']",
+			"tertiary": "css=button.dropdown-item"
+		},
+		"directPayoutRadioButton": {
+			"primary": "xpath=//label[@for='direct-payout']",
+			"secondary": "css=label[for='direct-payout']",
+			"tertiary": "xpath=//label[contains(text(),'Direct')]"
+		},
+		"autoSendReportsCheckBox": {
+			"primary": "xpath=//label[normalize-space()='Auto-send Commission Reports']",
+			"secondary": "css=label",
+			"tertiary": "xpath=//label[contains(text(),'Auto-send')]"
+		},
+		"paymentSettingDropdown": {
+			"primary": "xpath=//label[normalize-space()='Payment Settings']/following-sibling::*//button[contains(@class,'align-items-center')]",
+			"secondary": "css=button.align-items-center",
+			"tertiary": "xpath=//label[contains(text(),'Payment Settings')]//following::button"
+		},
+		"paymentSettingDropdownOption": {
+			"primary": "xpath=//div[contains(@class,'dropdown-menu show')]//following::div//button[normalize-space()='${value}']",
+			"secondary": "xpath=//button[normalize-space()='${value}']",
+			"tertiary": "css=button.dropdown-item"
+		},
+		"selectAccountDropdown": {
+			"primary": "xpath=//label[normalize-space()='Account']/following-sibling::*//button[contains(@class,'align-items-center')]",
+			"secondary": "css=button.align-items-center",
+			"tertiary": "xpath=//label[contains(text(),'Account')]//following::button"
+		},
+		"accountDropdownOption": {
+			"primary": "xpath=//div[@class='dropdown-options limit-height']//following::button[normalize-space()='${value}']",
+			"secondary": "xpath=//button[normalize-space()='${value}']",
+			"tertiary": "css=button.dropdown-item"
+		},
+		"commissionFrequencyDropdown": {
+			"primary": "xpath=//label[normalize-space()='Commission Frequency']/following-sibling::app-single-select//button[@ngbdropdowntoggle]",
+			"secondary": "css=button.dropdown-toggle",
+			"tertiary": "xpath=//label[contains(text(),'Commission Frequency')]//following::button"
+		},
+		"commissionFrequencyDropdownOption": {
+			"primary": "xpath=//label[normalize-space()='Commission Frequency']/following-sibling::app-single-select//div[contains(@class,'dropdown-menu') and contains(@class,'show')]//button[normalize-space()='${value}']",
+			"secondary": "xpath=//label[contains(normalize-space(),'${value}')]",
+			"tertiary": "css=label"
+		},
+		"disabledCadConversionBufferField": {
+			"primary": "xpath=//label[contains(normalize-space(),'CAD Payout Options')]//parent::div//input[@type='number' and @placeholder='0.00' and @disabled]",
+			"secondary": "xpath=//label[contains(text(),'CAD Payout Options')]//following::input[@disabled]",
+			"tertiary": "css=input[type='number'][placeholder='0.00'][disabled]"
+		},
+		"taxesNotApplicableLabel": {
+			"primary": "xpath=//div//span[normalize-space()='Taxes Not Applicable']",
+			"secondary": "css=span",
+			"tertiary": "xpath=//span[contains(text(),'Taxes Not Applicable')]"
+		},
+		"convertCADtoUSDRadioButton": {
+			"primary": "xpath=//label[@for='convert-to-usd']",
+			"secondary": "css=label[for='convert-to-usd']",
+			"tertiary": "xpath=//label[contains(text(),'Convert CAD to USD')]"
+		},
+		"cadInvoiceReferenceField": {
+			"primary": "xpath=//label[normalize-space()='CAD Payout Options']//parent::div//following-sibling::div[.//label[normalize-space()='Invoice Reference / Number']][1]//input[@type='text']",
+			"secondary": "css=input[type='text']",
+			"tertiary": "xpath=//label[contains(text(),'Invoice Reference / Number')]//following::input[1]"
+		},
+		"cadPaymentMethodDropdown": {
+			"primary": "xpath=//label[normalize-space()='CAD Payout Options']//parent::div//following-sibling::div[1]//button[@ngbdropdowntoggle]",
+			"secondary": "css=button[ngbdropdowntoggle]",
+			"tertiary": "xpath=//label[contains(text(),'CAD Payout Options')]//following::button[1]"
+		},
+		"cadPaymentMethodDropdownOption": {
+			"primary": "xpath=//label[normalize-space()='CAD Payout Options']//parent::div//following-sibling::div[1]//button[@ngbdropdowntoggle]//following::button[normalize-space()='${value}']",
+			"secondary": "xpath=//button[normalize-space()='${value}']",
+			"tertiary": "css=button.dropdown-item"
+		},
+		"convertUSDtoCADRadioButton": {
+			"primary": "xpath=//div//label[normalize-space()='USD Payout Options']//following::label[normalize-space()='Convert USD to CAD']",
+			"secondary": "css=label",
+			"tertiary": "xpath=//label[contains(text(),'Convert USD to CAD')]"
+		},
+		"usdInvoiceReferenceField": {
+			"primary": "xpath=//label[normalize-space()='USD Payout Options']//parent::div//following-sibling::div[.//label[normalize-space()='Invoice Reference / Number']][1]//input[@type='text']",
+			"secondary": "css=input[type='text']",
+			"tertiary": "xpath=//label[contains(text(),'Invoice Reference / Number')]//following::input[1]"
+		},
+		"usdPaymentMethodDropdown": {
+			"primary": "xpath=//label[normalize-space()='USD Payout Options']//parent::div//following-sibling::div[1]//button[@ngbdropdowntoggle]",
+			"secondary": "css=button[ngbdropdowntoggle]",
+			"tertiary": "xpath=//label[contains(text(),'USD Payout Options')]//following::button[1]"
+		},
+		"usdPaymentMethodDropdownOption": {
+			"primary": "xpath=//label[normalize-space()='USD Payout Options']//parent::div//following-sibling::div[1]//button[@ngbdropdowntoggle]//following::button[normalize-space()='${value}']",
+			"secondary": "xpath=//button[normalize-space()='${value}']",
+			"tertiary": "css=button.dropdown-item"
+		},
+		"saveChangesButton": {
+			"primary": "xpath=//div[@class='modal-footer']//following::button[@type='submit']",
+			"secondary": "css=button[type='submit']",
+			"tertiary": "xpath=//button[contains(text(),'Save')]"
+		},
+		"accountManagerUpdationSuccessModal": {
+			"primary": "xpath=//h2[@class='modal-title']//following::div[normalize-space()='Account manager updated successfully.']",
+			"secondary": "xpath=//div[contains(text(),'Account manager updated successfully.')]",
+			"tertiary": "css=div.modal-section-highlighted"
+		},
+		"accountManagerModalCloseButton": {
+			"primary": "xpath=//h2[@class='modal-title']//following::button[normalize-space()='Close']",
+			"secondary": "css=button",
+			"tertiary": "xpath=//button[contains(text(),'Close')]"
+		},
+		"commissionStatusButton": {
+			"primary": "xpath=//tr[td//div[normalize-space()='${value}']] /td[count(//th[normalize-space()='Commissions Status']/preceding-sibling::th)+1]//span",
+			"secondary": "xpath=//tr[td//*[contains(normalize-space(),'${value}')]]/td[count(//th[contains(normalize-space(),'Commissions Status')]/preceding-sibling::th)+1]//span",
+			"tertiary": "xpath=(//tr[td//*[normalize-space()='abc abc']]/td[position()=count(//th[normalize-space()='Commissions Status']/preceding-sibling::th)+1]//span)[1]"
+		},
+		"editCommissionStatus": {
+			"Primary": "xpath=//label[@for='active' and contains(@class,'custom-control-label')]",
+			"secondary": "xpath=//input[@id='active']/following-sibling::label",
+			"tertiary": "xpath= //label[@for='active']"
+		},
+		"saveCommissionStatus": {
+			"Primary": "xpath=//button[@type='submit' and normalize-space()='Save Changes']",
+			"secondary": "xpath=//button[text()=' Save Changes ']",
+			"tertiary": "xpath=//button[@type='submit' and normalize-space()='Save Changes']"
+		},
+		"statusSuccessModal": {
+			"Primary": "xpath=//p[normalize-space()='Commission status updated successfully.']",
+			"secondary": "xpath=//div[contains(@class,'modal-body')]//p",
+			"tertiary": "xpath=//p[contains(text(),'Commission status updated')]"
+		},
+		"statusSuccessModalCloseButton": {
+			"Primary": "xpath=//button[text()='Close']",
+			"secondary": "xpath=//button[@type='button' and contains(@class,'btn-outline-modal')]",
+			"tertiary": "xpath=//button[contains(@class,'btn') and @ngbautofocus]"
+		},
+		"ActiveCommissionStatus": {
+			"Primary": "xpath=//span[normalize-space()='Active']",
+			"secondary": "xpath=//span[@class='link-button' and normalize-space()='Active']",
+			"tertiary": "xpath=//span[contains(@class,'link-button')]"
+		}
+	}
+}
